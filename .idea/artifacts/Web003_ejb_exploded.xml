@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ejb" name="Web003:ejb exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Web003_ejb_exploded.rar</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Web003/ejb/EJB" />
+      <element id="module-output" name="Web003" />
+    </root>
+  </artifact>
+</component>
