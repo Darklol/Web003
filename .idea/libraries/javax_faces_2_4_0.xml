@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="javax.faces-2.4.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/javax.faces-2.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
