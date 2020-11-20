@@ -19,18 +19,26 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="419b3825-d547-4ad7-aae2-716cc6fe3844" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/pic/github-logo.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/pic/variant.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/graphics.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_primefaces_primefaces_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/main.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/clock.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/layout.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web003.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Web003.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/META-INF/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/header.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/header.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +49,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="jsf" />
+        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="facelets" />
       </list>
     </option>
   </component>
@@ -61,18 +71,22 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/resources/pic" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/templates" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
@@ -83,6 +97,7 @@
       <recent name="C:\Users\TheHs\Documents\GitHub\Web003\src\main\resources\img" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\TheHs\Documents\GitHub\Web003\src\main\webapp\templates" />
       <recent name="C:\Users\TheHs\Documents\GitHub\Web003\src\main\webapp\resources\pic" />
       <recent name="C:\Users\TheHs\Documents\GitHub\Web003" />
       <recent name="C:\Users\TheHs\Documents\GitHub\Web003\src" />
@@ -192,7 +207,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605777564978</updated>
-      <workItem from="1605777566531" duration="9157000" />
+      <workItem from="1605777566531" duration="17746000" />
     </task>
     <task id="LOCAL-00001" summary="Have made some directories">
       <created>1605780467798</created>
@@ -201,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605780467798</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="header.xhtml and graphics.html is done!">
+      <created>1605802668569</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605802668569</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +234,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -220,24 +254,33 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Have made some directories" />
-    <option name="LAST_COMMIT_MESSAGE" value="Have made some directories" />
+    <MESSAGE value="header.xhtml and graphics.html is done!" />
+    <option name="LAST_COMMIT_MESSAGE" value="header.xhtml and graphics.html is done!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1553" y="181" width="1089" height="727" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605777877141">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1553" y="181" width="1089" height="727" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1605777877141" />
-    <state x="1589" y="98" key="CommitChangelistDialog2" timestamp="1605780466264">
+    <state x="1589" y="98" key="CommitChangelistDialog2" timestamp="1605802666979">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1589" y="98" key="CommitChangelistDialog2/0.0.2752.1112@0.0.2752.1112" timestamp="1605780466264" />
-    <state x="1347" y="120" key="SettingsEditor" timestamp="1605778070808">
+    <state x="1589" y="98" key="CommitChangelistDialog2/0.0.2752.1112@0.0.2752.1112" timestamp="1605802666979" />
+    <state x="1347" y="120" key="SettingsEditor" timestamp="1605848049332">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1347" y="120" key="SettingsEditor/0.0.2752.1112@0.0.2752.1112" timestamp="1605778070808" />
-    <state x="1583" y="255" key="Vcs.Push.Dialog.v2" timestamp="1605780480852">
+    <state x="1347" y="120" key="SettingsEditor/0.0.2752.1112@0.0.2752.1112" timestamp="1605848049332" />
+    <state x="1583" y="255" key="Vcs.Push.Dialog.v2" timestamp="1605802673959">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1583" y="255" key="Vcs.Push.Dialog.v2/0.0.2752.1112@0.0.2752.1112" timestamp="1605780480852" />
+    <state x="1583" y="255" key="Vcs.Push.Dialog.v2/0.0.2752.1112@0.0.2752.1112" timestamp="1605802673959" />
+    <state x="1582" y="437" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1605847895138">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state x="1582" y="437" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2752.1112@0.0.2752.1112" timestamp="1605847895138" />
+    <state x="1580" y="260" width="672" height="678" key="search.everywhere.popup" timestamp="1605839936328">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state x="1580" y="260" width="672" height="678" key="search.everywhere.popup/0.0.2752.1112@0.0.2752.1112" timestamp="1605839936328" />
   </component>
 </project>
