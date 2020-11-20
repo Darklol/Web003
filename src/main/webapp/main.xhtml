@@ -10,14 +10,74 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://java.sun.com/jsf/html">
-
-<h:head>
-    <title>Title</title>
-</h:head>
-
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://java.sun.com/jsf/core">
 <h:body>
+    <ui:composition template="templates/layout.xhtml"> <!-- Only something in this tag will be showed! -->
 
+        <ui:define name="title">Welcome!</ui:define>
+
+        <ui:define name="header">
+            <ui:include src="templates/header.xhtml"/>
+        </ui:define>
+
+        <ui:define name="content">
+            <f:event type="preRenderView" listener="#{pointsBean.init}"/> <!--What' this-->
+            <h:form>
+
+                <div class="x-value">   <!-- We can change "x-text" to change words' style -->
+                    <div class="h5">X value:</div>
+                    <h:commandLink id="x-3" name="x-commandLink" value="-3" action="#{pointsBean.setX(-3)}">
+                        <h:outputText value="-3" styleClass="x-text" for="x-3"></h:outputText>
+                    </h:commandLink>
+                    <h:commandLink id="x-2" name="x-commandLink" value="-2" action="#{pointsBean.setX(-2)}">
+                        <h:outputText value="-2" styleClass="x-text" for="x-3"></h:outputText>
+                    </h:commandLink>
+                    <h:commandLink id="x-1" name="x-commandLink" value="-1" action="#{pointsBean.setX(-1)}">
+                        <h:outputText value="-1" styleClass="x-text" for="x-3"></h:outputText>
+                    </h:commandLink>
+                    <h:commandLink id="x0" name="x-commandLink" value="0" action="#{pointsBean.setX(0)}">
+                        <h:outputText value="0" styleClass="x-text" for="x-3"></h:outputText>
+                    </h:commandLink>
+                    <h:commandLink id="x1" name="x-commandLink" value="1" action="#{pointsBean.setX(1)}">
+                        <h:outputText value="1" styleClass="x-text" for="x-3"></h:outputText>
+                    </h:commandLink>
+                    <h:commandLink id="x2" name="x-commandLink" value="2" action="#{pointsBean.setX(2)}">
+                        <h:outputText value="2" styleClass="x-text" for="x-3"></h:outputText>
+                    </h:commandLink>
+                    <h:commandLink id="x3" name="x-commandLink" value="3" action="#{pointsBean.setX(3)}">
+                        <h:outputText value="3" styleClass="x-text" for="x-3"></h:outputText>
+                    </h:commandLink>
+                    <h:commandLink id="x4" name="x-commandLink" value="4" action="#{pointsBean.setX(4)}">
+                        <h:outputText value="4" styleClass="x-text" for="x-3"></h:outputText>
+                    </h:commandLink>
+                    <h:commandLink id="x5" name="x-commandLink" value="5" action="#{pointsBean.setX(5)}">
+                        <h:outputText value="5" styleClass="x-text" for="x-3"></h:outputText>
+                    </h:commandLink>
+                </div>
+
+                <div class="y-value">
+                    <div class="h5">Y value:</div>
+                    <h:inputText id="y" name="y-text" a:placeholder="Value in [-5..5]"
+                                 converterMessage="Y must be number..."
+                                 styleClass="y" value="#{pointsBean.y}"
+                                 validatorMessage="Y must be number between -3 and 3. If you want more, please lick the svg"
+                                 required="true" requiredMessage="Y is required" maxlength="17">
+                        <f:validateDoubleRange minimum="-5" maximum="5"/>
+                    </h:inputText>
+                    <h:message for="y" style="color: red"/>
+                    <div class="invalid-y d-none h5" style="color: red">
+                        Y must be number...
+                    </div>
+                </div>
+            </h:form>
+
+        </ui:define>
+
+
+    </ui:composition>
 </h:body>
 
 </html>

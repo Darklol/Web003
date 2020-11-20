@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="web003:war" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -30,15 +35,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="419b3825-d547-4ad7-aae2-716cc6fe3844" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_primefaces_primefaces_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/main.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/clock.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/layout.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_ops4j_pax_cdi_pax_cdi_api_0_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/InAreaChecker/InAreaChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/beans/PointsBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/model/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/test/testPart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/testPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/testXHTML.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/itmo/web/beans/PointsBeanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Web003_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Web003_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web003.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Web003.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/main.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +59,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="jsf" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="facelets" />
+        <option value="JUnit5 Test Class" />
+        <option value="HTML File" />
+        <option value="jsf" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,6 +92,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/templates" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -92,9 +107,18 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.itmo.web.beans" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\TheHs\Documents\GitHub\Web003\src\main\webapp" />
       <recent name="C:\Users\TheHs\Documents\GitHub\Web003\src\main\resources\img" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.itmo.web.InAreaChecker" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\TheHs\Documents\GitHub\Web003\src\main\webapp\templates" />
@@ -103,7 +127,7 @@
       <recent name="C:\Users\TheHs\Documents\GitHub\Web003\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.graphics.html">
+  <component name="RunManager" selected="JBoss Server.JBoss 21.0.0.Final">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -189,12 +213,17 @@
     <configuration name="graphics.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web003/src/main/webapp/templates/graphics.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="testPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web003/src/main/webapp/testPage.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="JBoss Server.JBoss 21.0.0.Final" />
       <item itemvalue="JavaScript Debug.graphics.html" />
+      <item itemvalue="JavaScript Debug.testPage.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.testPage.html" />
         <item itemvalue="JavaScript Debug.graphics.html" />
       </list>
     </recent_temporary>
@@ -207,7 +236,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605777564978</updated>
-      <workItem from="1605777566531" duration="17746000" />
+      <workItem from="1605777566531" duration="35434000" />
     </task>
     <task id="LOCAL-00001" summary="Have made some directories">
       <created>1605780467798</created>
@@ -223,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605802668569</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="layout.xhtml is good. And wait index.js and clock.html">
+      <created>1605863302572</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605863302572</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,29 +291,54 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Have made some directories" />
     <MESSAGE value="header.xhtml and graphics.html is done!" />
-    <option name="LAST_COMMIT_MESSAGE" value="header.xhtml and graphics.html is done!" />
+    <MESSAGE value="layout.xhtml is good. And wait index.js and clock.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="layout.xhtml is good. And wait index.js and clock.html" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1553" y="181" width="1089" height="727" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605777877141">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1553" y="181" width="1089" height="727" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1605777877141" />
-    <state x="1589" y="98" key="CommitChangelistDialog2" timestamp="1605802666979">
+    <state x="1589" y="98" key="CommitChangelistDialog2" timestamp="1605863299969">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1589" y="98" key="CommitChangelistDialog2/0.0.2752.1112@0.0.2752.1112" timestamp="1605802666979" />
-    <state x="1347" y="120" key="SettingsEditor" timestamp="1605848049332">
+    <state x="1589" y="98" key="CommitChangelistDialog2/0.0.2752.1112@0.0.2752.1112" timestamp="1605863299969" />
+    <state x="537" y="60" key="DiffContextDialog" timestamp="1605863283938">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1347" y="120" key="SettingsEditor/0.0.2752.1112@0.0.2752.1112" timestamp="1605848049332" />
-    <state x="1583" y="255" key="Vcs.Push.Dialog.v2" timestamp="1605802673959">
+    <state x="537" y="60" key="DiffContextDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1605863283938" />
+    <state width="969" height="253" key="GridCell.Tab.0.bottom" timestamp="1605895299511">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1583" y="255" key="Vcs.Push.Dialog.v2/0.0.2752.1112@0.0.2752.1112" timestamp="1605802673959" />
-    <state x="1582" y="437" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1605847895138">
+    <state width="969" height="253" key="GridCell.Tab.0.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1605895299511" />
+    <state width="969" height="253" key="GridCell.Tab.0.center" timestamp="1605895299510">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1582" y="437" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2752.1112@0.0.2752.1112" timestamp="1605847895138" />
+    <state width="969" height="253" key="GridCell.Tab.0.center/0.0.2752.1112@0.0.2752.1112" timestamp="1605895299510" />
+    <state width="969" height="253" key="GridCell.Tab.0.left" timestamp="1605895299510">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state width="969" height="253" key="GridCell.Tab.0.left/0.0.2752.1112@0.0.2752.1112" timestamp="1605895299510" />
+    <state width="969" height="253" key="GridCell.Tab.0.right" timestamp="1605895299510">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state width="969" height="253" key="GridCell.Tab.0.right/0.0.2752.1112@0.0.2752.1112" timestamp="1605895299510" />
+    <state x="1347" y="120" key="SettingsEditor" timestamp="1605866270969">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state x="1347" y="120" key="SettingsEditor/0.0.2752.1112@0.0.2752.1112" timestamp="1605866270969" />
+    <state x="1583" y="255" key="Vcs.Push.Dialog.v2" timestamp="1605863304253">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state x="1583" y="255" key="Vcs.Push.Dialog.v2/0.0.2752.1112@0.0.2752.1112" timestamp="1605863304253" />
+    <state x="1582" y="437" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1605866258938">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state x="1582" y="437" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2752.1112@0.0.2752.1112" timestamp="1605866258938" />
+    <state x="1714" y="357" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1605865269821">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state x="1714" y="357" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1605865269821" />
     <state x="1580" y="260" width="672" height="678" key="search.everywhere.popup" timestamp="1605839936328">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
