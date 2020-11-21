@@ -35,9 +35,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="419b3825-d547-4ad7-aae2-716cc6fe3844" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/graphics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/web/beans/PointsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/beans/PointsBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/web/model/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/model/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/main.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,12 +48,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="facelets" />
         <option value="JUnit5 Test Class" />
         <option value="HTML File" />
         <option value="jsf" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -226,7 +226,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605777564978</updated>
-      <workItem from="1605777566531" duration="46399000" />
+      <workItem from="1605777566531" duration="49187000" />
     </task>
     <task id="LOCAL-00001" summary="Have made some directories">
       <created>1605780467798</created>
@@ -256,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605895373028</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Need some validators for xyr!">
+      <created>1605969936635</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605969936635</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,17 +297,18 @@
     <MESSAGE value="header.xhtml and graphics.html is done!" />
     <MESSAGE value="layout.xhtml is good. And wait index.js and clock.html" />
     <MESSAGE value="input x and y are ok! Make some test files, you can use them! good night!" />
-    <option name="LAST_COMMIT_MESSAGE" value="input x and y are ok! Make some test files, you can use them! good night!" />
+    <MESSAGE value="Need some validators for xyr!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Need some validators for xyr!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1553" y="181" width="1089" height="727" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605777877141">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1553" y="181" width="1089" height="727" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1605777877141" />
-    <state x="1589" y="98" key="CommitChangelistDialog2" timestamp="1605895370006">
+    <state x="1589" y="98" key="CommitChangelistDialog2" timestamp="1605969933487">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1589" y="98" key="CommitChangelistDialog2/0.0.2752.1112@0.0.2752.1112" timestamp="1605895370006" />
+    <state x="1589" y="98" key="CommitChangelistDialog2/0.0.2752.1112@0.0.2752.1112" timestamp="1605969933487" />
     <state x="537" y="60" key="DiffContextDialog" timestamp="1605863283938">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
@@ -325,10 +333,10 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1347" y="120" key="SettingsEditor/0.0.2752.1112@0.0.2752.1112" timestamp="1605866270969" />
-    <state x="1583" y="255" key="Vcs.Push.Dialog.v2" timestamp="1605895379021">
+    <state x="1583" y="255" key="Vcs.Push.Dialog.v2" timestamp="1605969937107">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1583" y="255" key="Vcs.Push.Dialog.v2/0.0.2752.1112@0.0.2752.1112" timestamp="1605895379021" />
+    <state x="1583" y="255" key="Vcs.Push.Dialog.v2/0.0.2752.1112@0.0.2752.1112" timestamp="1605969937107" />
     <state x="1306" y="150" width="1272" height="760" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605929056866">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>

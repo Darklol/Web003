@@ -123,8 +123,51 @@
                 <h:commandButton type="submit" styleClass="hidden-submit-btn"
                                  action="#{pointsBean.addPointFromHiddenForm}"/>
             </h:form>
+
+            <div class="graphic">
+                <ui:include src="templates/graphics.html"></ui:include>
+            </div>
+
+            <div class="table-view">
+                <div class="h4">Results</div>
+                <h:dataTable styleClass="table-view" value="#{pointsBean.allPoints}" var="point" id="results-table">
+
+                    <h:column>
+                        <f:facet name="header">X</f:facet>
+                        #{point.x}
+                    </h:column>
+
+                    <h:column>
+                        <f:facet name="header">Y</f:facet>
+                        #{point.y}
+                    </h:column>
+
+                    <h:column>
+                        <f:facet name="header">R</f:facet>
+                        #{point.r}
+                    </h:column>
+
+                    <h:column>
+                        <f:facet name="header">Current time</f:facet>
+                        #{point.queryTime}
+                    </h:column>
+
+                    <h:column>
+                        <f:facet name="header">Result</f:facet>
+                        #{point.inArea}
+                    </h:column>
+                </h:dataTable>
+            </div>
+
+            <div class="link-button">
+                <h:link outcome="index">Start page</h:link>
+            </div>
         </ui:define>
 
+        <ui:define name="scripts">
+            <h:outputScript library="js" name="graphics.js"/>
+            <h:outputScript library="js" name="main.js"/>
+        </ui:define>
 
     </ui:composition>
 </h:body>
