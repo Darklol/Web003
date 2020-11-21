@@ -56,6 +56,10 @@
                     <h:commandLink id="x5" name="x-commandLink" value="5" action="#{pointsBean.setX(5)}">
                         <h:outputText value="5" styleClass="x-text" for="x-3"></h:outputText>
                     </h:commandLink>
+
+                    <div class="invalid-x d-none h5" style="color: red">
+                        Please choose x.
+                    </div>
                 </div>
 
                 <div class="y-value">
@@ -72,8 +76,53 @@
                         Y must be number...
                     </div>
                 </div>
+
+                <!--We don't need to set "selected" attribute. Rendered output will set it on the first option-->
+                <div class="r-value">
+                    <div class="h5">R value:</div>
+                    <h:selectOneRadio value="#{pointsBean.r}">
+                        <f:selectItem itemValue="1" itemLabel="1" styleClass="r-text"/>
+                        <f:selectItem itemValue="1.5" itemLabel="1.5" styleClass="r-text"/>
+                        <f:selectItem itemValue="2" itemLabel="2" styleClass="r-text"/>
+                        <f:selectItem itemValue="2.5" itemLabel="2.5" styleClass="r-text"/>
+                        <f:selectItem itemValue="3" itemLabel="3" styleClass="r-text"/>
+                    </h:selectOneRadio>
+                </div>
+
+                <div class="control-buttons mt-3 row">
+
+                    <div class="my-3 col-sm">
+                        <h:commandButton styleClass="btn btn-primary btn-lg submit-btn" value="Submit"
+                                         type="submit"
+                                         action="#{pointsBean.addPointFromFields}">
+                        </h:commandButton>
+                    </div>
+
+                    <div class="my-3 col-sm">
+                        <h:commandButton styleClass="btn btn-primary btn-lg clear-form-btn"
+                                         value="Clear form"
+                                         type="button"/>
+                    </div>
+
+                    <div class="my-3 col-sm">
+                        <h:commandButton styleClass="btn btn-primary btn-lg clear-table-btn"
+                                         value="Clear table"
+                                         type="button"
+                                         action="#{pointsBean.clearTable}">
+                            <f:ajax render="results-table"/>
+                        </h:commandButton>
+                    </div>
+                </div>
             </h:form>
 
+            <!--Hidden form is for clicking svg-->
+            <h:form styleClass="d-none hidden-form">
+                <h:inputText styleClass="x-hidden" value="#{pointsBean.hidden_x}"/>
+                <h:inputText styleClass="y-hidden" value="#{pointsBean.hidden_y}"/>
+                <h:inputText styleClass="r-hidden" value="#{pointsBean.hidden_r}"/>
+                <h:commandButton type="submit" styleClass="hidden-submit-btn"
+                                 action="#{pointsBean.addPointFromHiddenForm}"/>
+            </h:form>
         </ui:define>
 
 

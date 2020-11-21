@@ -35,20 +35,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="419b3825-d547-4ad7-aae2-716cc6fe3844" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_ops4j_pax_cdi_pax_cdi_api_0_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/InAreaChecker/InAreaChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/beans/PointsBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/model/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/test/testPart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/testPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/testXHTML.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/itmo/web/beans/PointsBeanTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Web003_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Web003_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web003.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Web003.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/web/beans/PointsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/beans/PointsBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/web/model/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/model/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/main.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,6 +83,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/templates" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -236,7 +226,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605777564978</updated>
-      <workItem from="1605777566531" duration="35434000" />
+      <workItem from="1605777566531" duration="46399000" />
     </task>
     <task id="LOCAL-00001" summary="Have made some directories">
       <created>1605780467798</created>
@@ -259,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605863302572</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="input x and y are ok! Make some test files, you can use them! good night!">
+      <created>1605895373028</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605895373028</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,17 +289,18 @@
     <MESSAGE value="Have made some directories" />
     <MESSAGE value="header.xhtml and graphics.html is done!" />
     <MESSAGE value="layout.xhtml is good. And wait index.js and clock.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="layout.xhtml is good. And wait index.js and clock.html" />
+    <MESSAGE value="input x and y are ok! Make some test files, you can use them! good night!" />
+    <option name="LAST_COMMIT_MESSAGE" value="input x and y are ok! Make some test files, you can use them! good night!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1553" y="181" width="1089" height="727" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605777877141">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1553" y="181" width="1089" height="727" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1605777877141" />
-    <state x="1589" y="98" key="CommitChangelistDialog2" timestamp="1605863299969">
+    <state x="1589" y="98" key="CommitChangelistDialog2" timestamp="1605895370006">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1589" y="98" key="CommitChangelistDialog2/0.0.2752.1112@0.0.2752.1112" timestamp="1605863299969" />
+    <state x="1589" y="98" key="CommitChangelistDialog2/0.0.2752.1112@0.0.2752.1112" timestamp="1605895370006" />
     <state x="537" y="60" key="DiffContextDialog" timestamp="1605863283938">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
@@ -327,10 +325,14 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1347" y="120" key="SettingsEditor/0.0.2752.1112@0.0.2752.1112" timestamp="1605866270969" />
-    <state x="1583" y="255" key="Vcs.Push.Dialog.v2" timestamp="1605863304253">
+    <state x="1583" y="255" key="Vcs.Push.Dialog.v2" timestamp="1605895379021">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1583" y="255" key="Vcs.Push.Dialog.v2/0.0.2752.1112@0.0.2752.1112" timestamp="1605863304253" />
+    <state x="1583" y="255" key="Vcs.Push.Dialog.v2/0.0.2752.1112@0.0.2752.1112" timestamp="1605895379021" />
+    <state x="1306" y="150" width="1272" height="760" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605929056866">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state x="1306" y="150" width="1272" height="760" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1605929056866" />
     <state x="1582" y="437" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1605866258938">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
@@ -339,9 +341,17 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1714" y="357" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1605865269821" />
-    <state x="1580" y="260" width="672" height="678" key="search.everywhere.popup" timestamp="1605839936328">
+    <state x="1673" y="290" key="extract.method.dialog" timestamp="1605933204321">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1580" y="260" width="672" height="678" key="search.everywhere.popup/0.0.2752.1112@0.0.2752.1112" timestamp="1605839936328" />
+    <state x="1673" y="290" key="extract.method.dialog/0.0.2752.1112@0.0.2752.1112" timestamp="1605933204321" />
+    <state x="1599" y="246" key="run.anything.popup" timestamp="1605928142697">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state x="1599" y="246" key="run.anything.popup/0.0.2752.1112@0.0.2752.1112" timestamp="1605928142697" />
+    <state x="1581" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1605929990339">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state x="1581" y="259" width="672" height="678" key="search.everywhere.popup/0.0.2752.1112@0.0.2752.1112" timestamp="1605929990339" />
   </component>
 </project>
