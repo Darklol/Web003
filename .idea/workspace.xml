@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="web003:war" />
+      <artifact name="web003:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -35,10 +35,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="419b3825-d547-4ad7-aae2-716cc6fe3844" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/graphics.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Web003_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Web003_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web003_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web003.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Web003.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/web/beans/PointsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/beans/PointsBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/main.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +62,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -64,6 +72,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectId" id="1keLN1FLjpYcEsJa4WQzXW3YFrP" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -91,10 +100,10 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -118,21 +127,11 @@
     </key>
   </component>
   <component name="RunManager" selected="JBoss Server.JBoss 21.0.0.Final">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="JBoss 21.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 21.0.0.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="web003:war">
+        <artifact name="web003:war exploded">
           <settings />
         </artifact>
       </deployment>
@@ -196,7 +195,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="web003:war" />
+          <artifact name="web003:war exploded" />
         </option>
       </method>
     </configuration>
@@ -207,9 +206,9 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JBoss Server.JBoss 21.0.0.Final" />
       <item itemvalue="JavaScript Debug.graphics.html" />
       <item itemvalue="JavaScript Debug.testPage.html" />
+      <item itemvalue="JBoss Server.JBoss 21.0.0.Final" />
     </list>
     <recent_temporary>
       <list>
@@ -226,7 +225,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605777564978</updated>
-      <workItem from="1605777566531" duration="49187000" />
+      <workItem from="1605777566531" duration="64492000" />
+      <workItem from="1606056089941" duration="8033000" />
     </task>
     <task id="LOCAL-00001" summary="Have made some directories">
       <created>1605780467798</created>
@@ -263,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605969936635</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Just created some js files and added table in main page">
+      <created>1605983822194</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605983822194</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +298,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Have made some directories" />
@@ -298,57 +306,82 @@
     <MESSAGE value="layout.xhtml is good. And wait index.js and clock.html" />
     <MESSAGE value="input x and y are ok! Make some test files, you can use them! good night!" />
     <MESSAGE value="Need some validators for xyr!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Need some validators for xyr!" />
+    <MESSAGE value="Just created some js files and added table in main page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Just created some js files and added table in main page" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1553" y="181" width="1089" height="727" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605777877141">
+    <state x="1422" y="104" key="#Project_Structure" timestamp="1606056167071">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1553" y="181" width="1089" height="727" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1605777877141" />
-    <state x="1589" y="98" key="CommitChangelistDialog2" timestamp="1605969933487">
+    <state x="1422" y="104" key="#Project_Structure/0.0.2752.1112@0.0.2752.1112" timestamp="1606056167071" />
+    <state x="1553" y="147" width="1089" height="965" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606058205323">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1589" y="98" key="CommitChangelistDialog2/0.0.2752.1112@0.0.2752.1112" timestamp="1605969933487" />
-    <state x="537" y="60" key="DiffContextDialog" timestamp="1605863283938">
+    <state x="1553" y="147" width="1089" height="965" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1606058205323" />
+    <state x="1589" y="98" key="CommitChangelistDialog2" timestamp="1605983819975">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="537" y="60" key="DiffContextDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1605863283938" />
-    <state width="969" height="253" key="GridCell.Tab.0.bottom" timestamp="1605895299511">
+    <state x="1589" y="98" key="CommitChangelistDialog2/0.0.2752.1112@0.0.2752.1112" timestamp="1605983819975" />
+    <state x="537" y="60" key="DiffContextDialog" timestamp="1605983750655">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="969" height="253" key="GridCell.Tab.0.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1605895299511" />
-    <state width="969" height="253" key="GridCell.Tab.0.center" timestamp="1605895299510">
+    <state x="537" y="60" key="DiffContextDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1605983750655" />
+    <state width="969" height="253" key="GridCell.Tab.0.bottom" timestamp="1606064107012">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="969" height="253" key="GridCell.Tab.0.center/0.0.2752.1112@0.0.2752.1112" timestamp="1605895299510" />
-    <state width="969" height="253" key="GridCell.Tab.0.left" timestamp="1605895299510">
+    <state width="969" height="253" key="GridCell.Tab.0.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1606064107012" />
+    <state width="969" height="253" key="GridCell.Tab.0.center" timestamp="1606064107012">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="969" height="253" key="GridCell.Tab.0.left/0.0.2752.1112@0.0.2752.1112" timestamp="1605895299510" />
-    <state width="969" height="253" key="GridCell.Tab.0.right" timestamp="1605895299510">
+    <state width="969" height="253" key="GridCell.Tab.0.center/0.0.2752.1112@0.0.2752.1112" timestamp="1606064107012" />
+    <state width="969" height="253" key="GridCell.Tab.0.left" timestamp="1606064107012">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="969" height="253" key="GridCell.Tab.0.right/0.0.2752.1112@0.0.2752.1112" timestamp="1605895299510" />
-    <state x="1347" y="120" key="SettingsEditor" timestamp="1605866270969">
+    <state width="969" height="253" key="GridCell.Tab.0.left/0.0.2752.1112@0.0.2752.1112" timestamp="1606064107012" />
+    <state width="969" height="253" key="GridCell.Tab.0.right" timestamp="1606064107012">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1347" y="120" key="SettingsEditor/0.0.2752.1112@0.0.2752.1112" timestamp="1605866270969" />
-    <state x="1583" y="255" key="Vcs.Push.Dialog.v2" timestamp="1605969937107">
+    <state width="969" height="253" key="GridCell.Tab.0.right/0.0.2752.1112@0.0.2752.1112" timestamp="1606064107012" />
+    <state width="969" height="253" key="GridCell.Tab.1.bottom" timestamp="1606064148717">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1583" y="255" key="Vcs.Push.Dialog.v2/0.0.2752.1112@0.0.2752.1112" timestamp="1605969937107" />
+    <state width="969" height="253" key="GridCell.Tab.1.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1606064148717" />
+    <state width="969" height="253" key="GridCell.Tab.1.center" timestamp="1606064148716">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state width="969" height="253" key="GridCell.Tab.1.center/0.0.2752.1112@0.0.2752.1112" timestamp="1606064148716" />
+    <state width="969" height="253" key="GridCell.Tab.1.left" timestamp="1606064148716">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state width="969" height="253" key="GridCell.Tab.1.left/0.0.2752.1112@0.0.2752.1112" timestamp="1606064148716" />
+    <state width="969" height="253" key="GridCell.Tab.1.right" timestamp="1606064148716">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state width="969" height="253" key="GridCell.Tab.1.right/0.0.2752.1112@0.0.2752.1112" timestamp="1606064148716" />
+    <state x="1347" y="120" key="SettingsEditor" timestamp="1606058164659">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state x="1347" y="120" key="SettingsEditor/0.0.2752.1112@0.0.2752.1112" timestamp="1606058164659" />
+    <state x="1583" y="255" key="Vcs.Push.Dialog.v2" timestamp="1605983823903">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state x="1583" y="255" key="Vcs.Push.Dialog.v2/0.0.2752.1112@0.0.2752.1112" timestamp="1605983823903" />
     <state x="1306" y="150" width="1272" height="760" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605929056866">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1306" y="150" width="1272" height="760" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1605929056866" />
-    <state x="1582" y="437" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1605866258938">
+    <state x="1582" y="437" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1606040640267">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1582" y="437" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2752.1112@0.0.2752.1112" timestamp="1605866258938" />
+    <state x="1582" y="437" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2752.1112@0.0.2752.1112" timestamp="1606040640267" />
     <state x="1714" y="357" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1605865269821">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1714" y="357" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1605865269821" />
+    <state x="1479" y="265" width="923" height="640" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1606064064555">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state x="1479" y="265" width="923" height="640" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.2752.1112@0.0.2752.1112" timestamp="1606064064555" />
     <state x="1673" y="290" key="extract.method.dialog" timestamp="1605933204321">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
@@ -361,5 +394,20 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1581" y="259" width="672" height="678" key="search.everywhere.popup/0.0.2752.1112@0.0.2752.1112" timestamp="1605929990339" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/web/beans/PointsBean.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

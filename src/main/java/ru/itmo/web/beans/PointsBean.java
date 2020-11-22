@@ -13,8 +13,7 @@ import javax.faces.bean.ApplicationScoped;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 //@Named("pointsBean") //Maybe we can use this. ManageBean is not deprecated.
 @Data
@@ -34,6 +33,13 @@ public class PointsBean implements Serializable {
 
     private List<Point> allPoints;
 
+    public void init() {
+/*        FacesContext facesContext = FacesContext.getCurrentInstance();
+        dbStorage = facesContext.getApplication()
+                .evaluateExpressionGet(facesContext, "#{dao}", DBStorage.class);*/
+//        allPoints = dbStorage.getAllPoints();
+
+    }
 
     public void addPoint(double x,double y,double r) {
         Point newPoint = new Point();
@@ -48,6 +54,11 @@ public class PointsBean implements Serializable {
 
         //We will do database later)
 //        dbStorage.addPoint(newPoint);
+    }
+
+    public void setX1(double x){
+        System.out.println("1234567890");
+        setX(x);
     }
 
     public void clearTable() {
