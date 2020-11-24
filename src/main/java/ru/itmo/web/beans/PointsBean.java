@@ -10,15 +10,16 @@ import ru.itmo.web.InAreaChecker.InAreaChecker;
 import ru.itmo.web.model.Point;
 
 import javax.faces.bean.ApplicationScoped;
+import javax.faces.bean.SessionScoped;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-//@Named("pointsBean") //Maybe we can use this. ManageBean is not deprecated.
 @Data
 @ManagedBean(name = "pointsBean")
-@ApplicationScoped
+//@ApplicationScoped
+@SessionScoped
 public class PointsBean implements Serializable {
 
     //Here x,y,r is for creating points from form
@@ -31,7 +32,7 @@ public class PointsBean implements Serializable {
     //Hidden part is for hidden form
     private double hidden_x,hidden_y,hidden_r;
 
-    private List<Point> allPoints;
+    private List<Point> allPoints = new ArrayList<Point>();
 
     public void init() {
 /*        FacesContext facesContext = FacesContext.getCurrentInstance();
@@ -47,8 +48,8 @@ public class PointsBean implements Serializable {
         newPoint.setQueryTime(dateFormat
                 .format(new Date(System.currentTimeMillis())));
         newPoint.setX(x);
-        newPoint.setR(r);
         newPoint.setY(y);
+        newPoint.setR(r);
         newPoint.setInArea(InAreaChecker.getResult(x, y, r));
         allPoints.add(newPoint);
 
@@ -56,16 +57,15 @@ public class PointsBean implements Serializable {
 //        dbStorage.addPoint(newPoint);
     }
 
-    public void setX1(double x){
-        System.out.println("1234567890");
-        setX(x);
-    }
 
     public void clearTable() {
 //        for (Point p : dbStorage.getAllPoints()) {
 //            dbStorage.removePoint(p);
 //        }
         allPoints.clear();
+        x = 0;
+        y=0;
+        r=0;
     }
 
     //I don't understand why here return 'main'

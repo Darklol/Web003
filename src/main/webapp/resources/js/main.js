@@ -1,11 +1,15 @@
-$(".x-commandLink").click(function (){
-    $(".x-commandLink").removeClass('active');
+$(".xbtn").click(function (){
+    $(".xbtn").removeClass('active');
     $(this).addClass('active')
-    alert('sad')
 })
 
-$(".xbtn").click(function (){
-    $(".x-commandLink").removeClass('active');
-    $(this).addClass('active')
-    alert('sad')
-})
+function clearForm(){
+    $(".xbtn").removeClass('active');
+    $(".y").val("");
+    alert("changed")
+    $(".r-text").each(function (){
+        $(this).attr("checked",false);
+    })
+}
+
+$(".clear-form-btn").click = clearForm();

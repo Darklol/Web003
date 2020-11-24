@@ -74,10 +74,10 @@
                 <!--We don't need to set "selected" attribute. Rendered output will set it on the first option-->
                 <div class="r-value">
                     <div class="h5">R value:</div>
-                    <p:selectOneRadio value="#{pointsBean.r}">
-                        <f:selectItem itemValue="1" itemLabel="1" styleClass="r-text"/>
+                    <p:selectOneRadio value="#{pointsBean.r}" styleClass="radio r-radio" required="true">
+                        <f:selectItem itemValue="1" itemLabel="1" styleClass="r-text" />
                         <f:selectItem itemValue="1.5" itemLabel="1.5" styleClass="r-text"/>
-                        <f:selectItem itemValue="2" itemLabel="2" styleClass="r-text"/>
+                        <f:selectItem itemValue="2" itemLabel="2" styleClass="r-text" checked="true"/>
                         <f:selectItem itemValue="2.5" itemLabel="2.5" styleClass="r-text"/>
                         <f:selectItem itemValue="3" itemLabel="3" styleClass="r-text"/>
                     </p:selectOneRadio>
@@ -89,12 +89,16 @@
                         <p:commandButton styleClass="btn btn-primary btn-lg submit-btn" value="Submit"
                                          type="submit"
                                          action="#{pointsBean.addPointFromFields}">
+                            <f:ajax render="results-table"/>
                         </p:commandButton>
                     </div>
 
                     <div class="my-3 col-sm">
                         <p:commandButton styleClass="btn btn-primary btn-lg clear-form-btn"
                                          value="Clear form"
+                                         onclick="clearForm()"
+                                         action="#{
+                                         pointsBean.setR(0)}"
                                          type="button"/>
                     </div>
 
@@ -122,9 +126,9 @@
                 <ui:include src="templates/graphics.html"></ui:include>
             </div>
 
-            <div class="table-view">
+            <div class="text-center my-3">
                 <div class="h4">Results</div>
-                <h:dataTable styleClass="table-view" value="#{pointsBean.allPoints}" var="point" id="results-table">
+                <h:dataTable styleClass="table table-bordered" value="#{pointsBean.allPoints}" var="point" id="results-table">
 
                     <h:column>
                         <f:facet name="header">X</f:facet>
