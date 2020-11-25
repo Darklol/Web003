@@ -3,7 +3,6 @@
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="web003:war exploded" />
-      <artifact name="web003:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -35,13 +34,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="419b3825-d547-4ad7-aae2-716cc6fe3844" name="Default Changelist" comment="Just created some js files and added table in main page">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/main.css" afterDir="false" />
+    <list default="true" id="419b3825-d547-4ad7-aae2-716cc6fe3844" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/main1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/test1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/web/beans/PointsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/beans/PointsBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/main.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/graphics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/graphics.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/layout.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/layout.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/header.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/header.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,11 +139,11 @@
       </method>
     </configuration>
     <configuration name="JBoss 21.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 21.0.0.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="BROWSER_ID" value="b2a9dca7-9d0b-4e1e-98a8-afb19c1328d2" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="START_JAVASCRIPT_DEBUGGER" value="true" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="web003:war exploded">
           <settings />
@@ -209,6 +209,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
+          <artifact name="web003:war exploded" />
           <artifact name="web003:war exploded" />
           <artifact name="web003:war exploded" />
         </option>
@@ -279,16 +280,26 @@
     <configuration name="graphics.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web003/src/main/webapp/templates/graphics.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="header.xhtml" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/web003_war_exploded/templates/header.xhtml">
+      <method v="2" />
+    </configuration>
+    <configuration name="main.xhtml" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/web003_war_exploded/main.xhtml">
+      <method v="2" />
+    </configuration>
     <configuration name="testPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web003/src/main/webapp/testPage.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.graphics.html" />
       <item itemvalue="JavaScript Debug.testPage.html" />
+      <item itemvalue="JavaScript Debug.header.xhtml" />
+      <item itemvalue="JavaScript Debug.main.xhtml" />
       <item itemvalue="JBoss Server.JBoss 21.0.0.Final" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.main.xhtml" />
+        <item itemvalue="JavaScript Debug.header.xhtml" />
         <item itemvalue="JavaScript Debug.testPage.html" />
         <item itemvalue="JavaScript Debug.graphics.html" />
       </list>
@@ -304,7 +315,7 @@
       <updated>1605777564978</updated>
       <workItem from="1605777566531" duration="64492000" />
       <workItem from="1606056089941" duration="8033000" />
-      <workItem from="1606203491109" duration="20899000" />
+      <workItem from="1606203491109" duration="36275000" />
     </task>
     <task id="LOCAL-00001" summary="Have made some directories">
       <created>1605780467798</created>
@@ -348,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605983822194</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Now the table can support ajax. But we need to fix about clear the fields. I don't how to use js to set radio(. &#10;&quot;checked = 'true'&quot; doesn't work(">
+      <created>1606244192099</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606244192099</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,7 +403,8 @@
     <MESSAGE value="input x and y are ok! Make some test files, you can use them! good night!" />
     <MESSAGE value="Need some validators for xyr!" />
     <MESSAGE value="Just created some js files and added table in main page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Just created some js files and added table in main page" />
+    <MESSAGE value="Now the table can support ajax. But we need to fix about clear the fields. I don't how to use js to set radio(. &#10;&quot;checked = 'true'&quot; doesn't work(" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now the table can support ajax. But we need to fix about clear the fields. I don't how to use js to set radio(. &#10;&quot;checked = 'true'&quot; doesn't work(" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1422" y="104" key="#Project_Structure" timestamp="1606234384218">
@@ -396,74 +415,74 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1983" y="301" key="#Schemas_and_DTDs/0.0.2752.1112@0.0.2752.1112" timestamp="1606220410435" />
-    <state x="1553" y="0" width="1088" height="1112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606234282174">
+    <state x="1553" y="0" width="1088" height="1112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606285792910">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1553" y="0" width="1088" height="1112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1606234282174" />
+    <state x="1553" y="0" width="1088" height="1112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1606285792910" />
     <state x="1817" y="57" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1606220411217">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1817" y="57" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.2752.1112@0.0.2752.1112" timestamp="1606220411217" />
-    <state x="1589" y="98" key="CommitChangelistDialog2" timestamp="1606220842617">
+    <state x="1589" y="98" key="CommitChangelistDialog2" timestamp="1606244191250">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1589" y="98" key="CommitChangelistDialog2/0.0.2752.1112@0.0.2752.1112" timestamp="1606220842617" />
+    <state x="1589" y="98" key="CommitChangelistDialog2/0.0.2752.1112@0.0.2752.1112" timestamp="1606244191250" />
     <state x="537" y="60" key="DiffContextDialog" timestamp="1605983750655">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="537" y="60" key="DiffContextDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1605983750655" />
-    <state x="1878" y="311" key="FileChooserDialogImpl" timestamp="1606222023397">
+    <state x="1878" y="311" key="FileChooserDialogImpl" timestamp="1606283065710">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1878" y="311" key="FileChooserDialogImpl/0.0.2752.1112@0.0.2752.1112" timestamp="1606222023397" />
-    <state width="1331" height="376" key="GridCell.Tab.0.bottom" timestamp="1606243816054">
+    <state x="1878" y="311" key="FileChooserDialogImpl/0.0.2752.1112@0.0.2752.1112" timestamp="1606283065710" />
+    <state width="1331" height="376" key="GridCell.Tab.0.bottom" timestamp="1606291764780">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1331" height="376" key="GridCell.Tab.0.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1606243816054" />
-    <state width="1331" height="376" key="GridCell.Tab.0.center" timestamp="1606243816054">
+    <state width="1331" height="376" key="GridCell.Tab.0.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1606291764780" />
+    <state width="1331" height="376" key="GridCell.Tab.0.center" timestamp="1606291764780">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1331" height="376" key="GridCell.Tab.0.center/0.0.2752.1112@0.0.2752.1112" timestamp="1606243816054" />
-    <state width="1331" height="376" key="GridCell.Tab.0.left" timestamp="1606243816054">
+    <state width="1331" height="376" key="GridCell.Tab.0.center/0.0.2752.1112@0.0.2752.1112" timestamp="1606291764780" />
+    <state width="1331" height="376" key="GridCell.Tab.0.left" timestamp="1606291764780">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1331" height="376" key="GridCell.Tab.0.left/0.0.2752.1112@0.0.2752.1112" timestamp="1606243816054" />
-    <state width="1331" height="376" key="GridCell.Tab.0.right" timestamp="1606243816054">
+    <state width="1331" height="376" key="GridCell.Tab.0.left/0.0.2752.1112@0.0.2752.1112" timestamp="1606291764780" />
+    <state width="1331" height="376" key="GridCell.Tab.0.right" timestamp="1606291764780">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1331" height="376" key="GridCell.Tab.0.right/0.0.2752.1112@0.0.2752.1112" timestamp="1606243816054" />
-    <state width="911" height="403" key="GridCell.Tab.1.bottom" timestamp="1606243816237">
+    <state width="1331" height="376" key="GridCell.Tab.0.right/0.0.2752.1112@0.0.2752.1112" timestamp="1606291764780" />
+    <state width="1331" height="376" key="GridCell.Tab.1.bottom" timestamp="1606291764780">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="911" height="403" key="GridCell.Tab.1.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1606243816237" />
-    <state width="911" height="403" key="GridCell.Tab.1.center" timestamp="1606243816237">
+    <state width="1331" height="376" key="GridCell.Tab.1.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1606291764780" />
+    <state width="1331" height="376" key="GridCell.Tab.1.center" timestamp="1606291764780">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="911" height="403" key="GridCell.Tab.1.center/0.0.2752.1112@0.0.2752.1112" timestamp="1606243816237" />
-    <state width="911" height="403" key="GridCell.Tab.1.left" timestamp="1606243816237">
+    <state width="1331" height="376" key="GridCell.Tab.1.center/0.0.2752.1112@0.0.2752.1112" timestamp="1606291764780" />
+    <state width="1331" height="376" key="GridCell.Tab.1.left" timestamp="1606291764780">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="911" height="403" key="GridCell.Tab.1.left/0.0.2752.1112@0.0.2752.1112" timestamp="1606243816237" />
-    <state width="911" height="403" key="GridCell.Tab.1.right" timestamp="1606243816237">
+    <state width="1331" height="376" key="GridCell.Tab.1.left/0.0.2752.1112@0.0.2752.1112" timestamp="1606291764780" />
+    <state width="1331" height="376" key="GridCell.Tab.1.right" timestamp="1606291764780">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="911" height="403" key="GridCell.Tab.1.right/0.0.2752.1112@0.0.2752.1112" timestamp="1606243816237" />
-    <state width="1331" height="376" key="GridCell.Tab.2.bottom" timestamp="1606243816054">
+    <state width="1331" height="376" key="GridCell.Tab.1.right/0.0.2752.1112@0.0.2752.1112" timestamp="1606291764780" />
+    <state width="1331" height="376" key="GridCell.Tab.2.bottom" timestamp="1606291764781">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1331" height="376" key="GridCell.Tab.2.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1606243816054" />
-    <state width="1331" height="376" key="GridCell.Tab.2.center" timestamp="1606243816054">
+    <state width="1331" height="376" key="GridCell.Tab.2.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1606291764781" />
+    <state width="1331" height="376" key="GridCell.Tab.2.center" timestamp="1606291764780">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1331" height="376" key="GridCell.Tab.2.center/0.0.2752.1112@0.0.2752.1112" timestamp="1606243816054" />
-    <state width="1331" height="376" key="GridCell.Tab.2.left" timestamp="1606243816054">
+    <state width="1331" height="376" key="GridCell.Tab.2.center/0.0.2752.1112@0.0.2752.1112" timestamp="1606291764780" />
+    <state width="1331" height="376" key="GridCell.Tab.2.left" timestamp="1606291764780">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1331" height="376" key="GridCell.Tab.2.left/0.0.2752.1112@0.0.2752.1112" timestamp="1606243816054" />
-    <state width="1331" height="376" key="GridCell.Tab.2.right" timestamp="1606243816054">
+    <state width="1331" height="376" key="GridCell.Tab.2.left/0.0.2752.1112@0.0.2752.1112" timestamp="1606291764780" />
+    <state width="1331" height="376" key="GridCell.Tab.2.right" timestamp="1606291764780">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1331" height="376" key="GridCell.Tab.2.right/0.0.2752.1112@0.0.2752.1112" timestamp="1606243816054" />
+    <state width="1331" height="376" key="GridCell.Tab.2.right/0.0.2752.1112@0.0.2752.1112" timestamp="1606291764780" />
     <state width="1331" height="376" key="GridCell.Tab.3.bottom" timestamp="1606222841331">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
@@ -480,14 +499,18 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state width="1331" height="376" key="GridCell.Tab.3.right/0.0.2752.1112@0.0.2752.1112" timestamp="1606222841331" />
-    <state x="1347" y="120" key="SettingsEditor" timestamp="1606234370944">
+    <state x="1704" y="263" width="747" height="592" key="NewModule_or_Project.wizard" timestamp="1606283098055">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1347" y="120" key="SettingsEditor/0.0.2752.1112@0.0.2752.1112" timestamp="1606234370944" />
-    <state x="1583" y="255" key="Vcs.Push.Dialog.v2" timestamp="1605983823903">
+    <state x="1704" y="263" width="747" height="592" key="NewModule_or_Project.wizard/0.0.2752.1112@0.0.2752.1112" timestamp="1606283098055" />
+    <state x="1347" y="120" key="SettingsEditor" timestamp="1606285314395">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1583" y="255" key="Vcs.Push.Dialog.v2/0.0.2752.1112@0.0.2752.1112" timestamp="1605983823903" />
+    <state x="1347" y="120" key="SettingsEditor/0.0.2752.1112@0.0.2752.1112" timestamp="1606285314395" />
+    <state x="1583" y="255" key="Vcs.Push.Dialog.v2" timestamp="1606244195263">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state x="1583" y="255" key="Vcs.Push.Dialog.v2/0.0.2752.1112@0.0.2752.1112" timestamp="1606244195263" />
     <state x="1306" y="150" width="1272" height="760" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605929056866">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
@@ -524,27 +547,17 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/web/beans/PointsBean.java</url>
-          <line>76</line>
-          <properties class="ru.itmo.web.beans.PointsBean" method="addPointFromFields">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/web/beans/PointsBean.java</url>
-          <line>44</line>
-          <properties class="ru.itmo.web.beans.PointsBean" method="addPoint">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="7" />
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/webapp/resources/js/graphics.js</url>
+          <line>25</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js</url>
-          <line>1</line>
+          <url>file://$PROJECT_DIR$/src/main/webapp/resources/js/graphics.js</url>
+          <line>40</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

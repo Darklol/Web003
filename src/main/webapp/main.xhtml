@@ -27,7 +27,7 @@
 
         <ui:define name="content">
             <f:event type="preRenderView" listener="#{pointsBean.init}"/> <!--What' this-->
-            <h:form>
+            <h:form id="value-form">
 
                 <div class="x-value">   <!-- We can change "x-text" to change words' style -->
                     <div class="h5">X value:</div>
@@ -60,7 +60,7 @@
                     <div class="h5">Y value:</div>
                     <p:inputText id="y" name="y-text" a:placeholder="Value in [-5..5]"
                                  converterMessage="Y must be number..."
-                                 styleClass="y" value="#{pointsBean.y}"
+                                 styleClass="y ui-inputtext" value="#{pointsBean.y}"
                                  validatorMessage="Y must be number between -5 and 5. If you want more, please lick the svg"
                                  required="true" requiredMessage="Y is required" maxlength="17" >
                         <f:validateDoubleRange minimum="-5" maximum="5"/>
@@ -74,13 +74,13 @@
                 <!--We don't need to set "selected" attribute. Rendered output will set it on the first option-->
                 <div class="r-value">
                     <div class="h5">R value:</div>
-                    <p:selectOneRadio value="#{pointsBean.r}" styleClass="radio r-radio" required="true">
+                    <h:selectOneRadio value="#{pointsBean.r}" styleClass="radio r-radio" required="true">
                         <f:selectItem itemValue="1" itemLabel="1" styleClass="r-text" />
                         <f:selectItem itemValue="1.5" itemLabel="1.5" styleClass="r-text"/>
                         <f:selectItem itemValue="2" itemLabel="2" styleClass="r-text" checked="true"/>
                         <f:selectItem itemValue="2.5" itemLabel="2.5" styleClass="r-text"/>
                         <f:selectItem itemValue="3" itemLabel="3" styleClass="r-text"/>
-                    </p:selectOneRadio>
+                    </h:selectOneRadio>
                 </div>
 
                 <div class="control-buttons mt-3 row">
@@ -88,7 +88,7 @@
                     <div class="my-3 col-sm">
                         <p:commandButton styleClass="btn btn-primary btn-lg submit-btn" value="Submit"
                                          type="submit"
-                                         action="#{pointsBean.addPointFromFields}">
+                                         action="#{pointsBean.addPointFromFields}" onclick="drawPointsFromTable()">
                             <f:ajax render="results-table"/>
                         </p:commandButton>
                     </div>
@@ -97,8 +97,7 @@
                         <p:commandButton styleClass="btn btn-primary btn-lg clear-form-btn"
                                          value="Clear form"
                                          onclick="clearForm()"
-                                         action="#{
-                                         pointsBean.setR(0)}"
+                                         action="#{pointsBean.setR(0)}"
                                          type="button"/>
                     </div>
 
@@ -122,7 +121,7 @@
                                  action="#{pointsBean.addPointFromHiddenForm}"/>
             </h:form>
 
-            <div class="graphic">
+            <div class="graphics">
                 <ui:include src="templates/graphics.html"></ui:include>
             </div>
 
