@@ -27,21 +27,25 @@ function drawPointsFromTable() {
     $("tbody tr").each(function () {
         const point = $(this);
         const x = parseFloat(point.find(">:first-child").text());
+        console.log("x:"+x);
         const y = parseFloat(point.find(">:nth-child(2)").text());
+        console.log("y:"+y);
+        const r = getRValue();
         // first empty row - bug in h:dataTable
-        if (isNaN(x) || isNaN(y)) {
+        if (isNaN(x) || isNaN(y) || r===undefined) {
             return;
         }
 
-        const color = getResult(x, y, getRValue()) ? 'green' : 'red';
+        const color = getResult(x, y, r) ? 'green' : 'red';
         console.log(color);
         const plot = $(".graphics svg");
-        console.log(plot);
+        // console.log(plot);
         const existingContent = plot.html();
         const contentToInsert = `<circle class="point" r="4" cx="${fromTableToSvgX(x)}" cy="${fromTableToSvgY(y)}" fill="${color}"></circle>`;
         plot.html(existingContent + contentToInsert);
     });
 }
-function deleteAllPointsFromPlot() {
-    $(".point").remove();
-}
+
+
+
+

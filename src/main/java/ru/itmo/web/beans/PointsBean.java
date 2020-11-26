@@ -11,6 +11,8 @@ import ru.itmo.web.model.Point;
 
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.SessionScoped;
+import javax.faces.component.UIComponent;
+import javax.faces.event.ActionEvent;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
@@ -18,8 +20,8 @@ import java.util.*;
 
 @Data
 @ManagedBean(name = "pointsBean")
-//@ApplicationScoped
-@SessionScoped
+@ApplicationScoped
+//@SessionScoped
 public class PointsBean implements Serializable {
 
     //Here x,y,r is for creating points from form
@@ -63,9 +65,6 @@ public class PointsBean implements Serializable {
 //            dbStorage.removePoint(p);
 //        }
         allPoints.clear();
-        x = 0;
-        y=0;
-        r=0;
     }
 
     //I don't understand why here return 'main'
@@ -76,5 +75,11 @@ public class PointsBean implements Serializable {
 
     public void addPointFromFields(){
         addPoint(x,y,r);
+    }
+
+    public void toggle(ActionEvent event) {
+        UIComponent component = event.getComponent();
+        String value = (String) component.getAttributes().get("value");
+        x = Double.parseDouble(value.replace(',','.'));
     }
 }
