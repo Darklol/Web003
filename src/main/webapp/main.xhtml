@@ -67,13 +67,13 @@
 
                 <div class="y-value">
                     <div class="h5">Y value:</div>
-                    <p:inputText id="y" name="y-text" a:placeholder="Value in [-5..5]"
+                    <h:inputText id="y" name="y-text" a:placeholder="Value in [-5..5]"
                                  converterMessage="Y must be number..."
                                  styleClass="y ui-inputtext" value="#{pointsBean.y}"
                                  validatorMessage="Y must be number between -5 and 5. If you want more, please click the svg"
                                  requiredMessage="Y is required" maxlength="17">
                         <f:validateDoubleRange minimum="-5" maximum="5"/>
-                    </p:inputText>
+                    </h:inputText>
                     <p:message for="y" style="color: red"/>
                     <div class="invalid-y d-none h5" style="color: red">
                         Y must be number...
@@ -90,6 +90,9 @@
                         <f:selectItem itemValue="2.5" itemLabel="2.5" styleClass="r-text"/>
                         <f:selectItem itemValue="3" itemLabel="3" styleClass="r-text"/>
                     </h:selectOneRadio>
+                    <div class="invalid-r d-none h5" style="color: red">
+                        Please choose r.
+                    </div>
                 </div>
 
                 <div class="control-buttons mt-3 row">
@@ -97,7 +100,8 @@
                     <div class="my-3 col-sm">
                         <h:commandButton styleClass="btn btn-primary btn-lg submit-btn" value="Submit"
                                          type="submit"
-                                         action="#{pointsBean.addPointFromFields}">
+                                         action="#{pointsBean.addPointFromFields}"
+                        onclick=" return isCorrectForm()">
                         </h:commandButton>
                     </div>
 

@@ -32,7 +32,7 @@ public class PointsBean implements Serializable {
     private double r;
 
     //Hidden part is for hidden form
-    private double hidden_x,hidden_y,hidden_r;
+    private double hidden_x, hidden_y, hidden_r;
 
     private List<Point> allPoints = new ArrayList<Point>();
 
@@ -44,11 +44,10 @@ public class PointsBean implements Serializable {
 
     }
 
-    public void addPoint(double x,double y,double r) {
+    public void addPoint(double x, double y, double r) {
         Point newPoint = new Point();
         SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss dd.MM.yyyy");
-        newPoint.setQueryTime(dateFormat
-                .format(new Date(System.currentTimeMillis())));
+        newPoint.setQueryTime(dateFormat.format(new Date(System.currentTimeMillis())));
         newPoint.setX(x);
         newPoint.setY(y);
         newPoint.setR(r);
@@ -68,18 +67,20 @@ public class PointsBean implements Serializable {
     }
 
     //I don't understand why here return 'main'
-    public String addPointFromHiddenForm(){
-        addPoint(hidden_x,hidden_y,hidden_r);
+    public String addPointFromHiddenForm() {
+        addPoint(hidden_x, hidden_y, hidden_r);
         return "main";
     }
 
-    public void addPointFromFields(){
-        addPoint(x,y,r);
+    public void addPointFromFields() {
+        if (r == 1 || r == 1.5 || r == 2 || r == 2.5 || r == 3) {
+            addPoint(x, y, r);
+        }
     }
 
     public void toggle(ActionEvent event) {
         UIComponent component = event.getComponent();
         String value = (String) component.getAttributes().get("value");
-        x = Double.parseDouble(value.replace(',','.'));
+        x = Double.parseDouble(value.replace(',', '.'));
     }
 }
