@@ -24,25 +24,29 @@ function deleteAllPointsFromPlot() {
 }
 
 function drawPointsFromTable() {
+    let totalPoint = 0;
     $("tbody tr").each(function () {
         const point = $(this);
         const x = parseFloat(point.find(">:first-child").text());
-        console.log("x:"+x);
         const y = parseFloat(point.find(">:nth-child(2)").text());
-        console.log("y:"+y);
+        // console.log("y:"+y);
         const r = getRValue();
+        // console.log("r"+ r)
         // first empty row - bug in h:dataTable
-        if (isNaN(x) || isNaN(y) || r===undefined) {
+        if (isNaN(x) || isNaN(y) || r === undefined || isNaN(r)) {
             return;
         }
-
-        const color = getResult(x, y, r) ? 'green' : 'red';
+        const inArea = getResult(x, y, r);
+        console.log("result:" + inArea);
+        const color = inArea ? 'green' : 'red';
         console.log(color);
         const plot = $(".graphics svg");
         // console.log(plot);
         const existingContent = plot.html();
         const contentToInsert = `<circle class="point" r="4" cx="${fromTableToSvgX(x)}" cy="${fromTableToSvgY(y)}" fill="${color}"></circle>`;
         plot.html(existingContent + contentToInsert);
+        totalPoint = totalPoint+1;
+        console.log("totalPoint:"+totalPoint)
     });
 }
 

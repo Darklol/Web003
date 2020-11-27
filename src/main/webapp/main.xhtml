@@ -89,7 +89,6 @@
                         <f:selectItem itemValue="2" itemLabel="2" styleClass="r-text"/>
                         <f:selectItem itemValue="2.5" itemLabel="2.5" styleClass="r-text"/>
                         <f:selectItem itemValue="3" itemLabel="3" styleClass="r-text"/>
-                        <f:ajax render="graphicsPart"/>
                     </h:selectOneRadio>
                 </div>
 
@@ -100,7 +99,7 @@
                                          type="submit"
                                          action="#{pointsBean.addPointFromFields}"
                                          onclick="drawPointsFromTable()">
-                            <f:ajax render="results-table graphicsPart"/>
+                            <f:ajax render="results-table"/>
                         </p:commandButton>
                     </div>
 

@@ -1,4 +1,13 @@
 function getResult(x,y,r) {
+    console.log("x:"+x);
+    console.log("y:"+y);
+    console.log("r:"+r);
+
+    // //check part
+    // let checkFirst = (firstQuarter && (y <= -x + r))
+    // let checkThird = (thirdQuarter && (x >= -r) && (y >= -r/2));
+    // let checkFourth = (fourthQuarter && (x * x + y * y <= r * r));
+
     //Quarter part
     let firstQuarter = x >= 0 && y >= 0;
     let thirdQuarter = x <= 0 && y <= 0;
@@ -22,11 +31,10 @@ function clearForm(){
 }
 
 function getRValue(){
-    let rValue = $(":checked").val();
+    let rValue = parseFloat($(":checked").val());
     if (isNaN(rValue)) {
         rValue = parseFloat($("tbody tr").last().find(">:nth-child(3)").text());
     }
-    console.log("r："+ rValue)
     return rValue;
 }
 
