@@ -1,7 +1,7 @@
 function getResult(x,y,r) {
-    console.log("x:"+x);
-    console.log("y:"+y);
-    console.log("r:"+r);
+    // console.log("x:"+x);
+    // console.log("y:"+y);
+    // console.log("r:"+r);
 
     // //check part
     // let checkFirst = (firstQuarter && (y <= -x + r))

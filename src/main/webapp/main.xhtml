@@ -95,28 +95,26 @@
                 <div class="control-buttons mt-3 row">
 
                     <div class="my-3 col-sm">
-                        <p:commandButton styleClass="btn btn-primary btn-lg submit-btn" value="Submit"
+                        <h:commandButton styleClass="btn btn-primary btn-lg submit-btn" value="Submit"
                                          type="submit"
-                                         action="#{pointsBean.addPointFromFields}"
-                                         onclick="drawPointsFromTable()">
-                            <f:ajax render="results-table"/>
-                        </p:commandButton>
+                                         action="#{pointsBean.addPointFromFields}">
+                        </h:commandButton>
                     </div>
 
                     <div class="my-3 col-sm">
-                        <p:commandButton styleClass="btn btn-primary btn-lg clear-form-btn"
+                        <h:commandButton styleClass="btn btn-primary btn-lg clear-form-btn"
                                          value="Clear form"
                                          onclick="clearForm()"
                                          type="button"/>
                     </div>
 
                     <div class="my-3 col-sm">
-                        <p:commandButton styleClass="btn btn-primary btn-lg clear-table-btn"
+                        <h:commandButton styleClass="btn btn-primary btn-lg clear-table-btn"
                                          value="Clear table"
                                          type="button"
                                          action="#{pointsBean.clearTable}">
                             <f:ajax render="results-table"/>
-                        </p:commandButton>
+                        </h:commandButton>
                     </div>
                 </div>
             </h:form>

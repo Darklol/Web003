@@ -29,7 +29,7 @@ public class PointsBean implements Serializable {
 
     private double y;// [-5,5]
 
-    private double r;// 1 1.5 2 2.5 3
+    private double r;
 
     //Hidden part is for hidden form
     private double hidden_x,hidden_y,hidden_r;
