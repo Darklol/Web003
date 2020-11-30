@@ -3,13 +3,12 @@ package ru.itmo.web.model;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
+@Entity
+//@Table(name = "points")
 public class Point {
     public Point(Double x, Double y, Double r, boolean inArea, String queryTime) {
         this.x = x;
