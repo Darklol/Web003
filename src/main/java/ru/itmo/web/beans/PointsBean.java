@@ -3,6 +3,7 @@ package ru.itmo.web.beans;
 import javax.faces.bean.ManagedBean;
 
 import lombok.Data;
+import lombok.Getter;
 import lombok.Setter;
 import ru.itmo.web.InAreaChecker.InAreaChecker;
 import ru.itmo.web.model.Point;
@@ -40,8 +41,11 @@ public class PointsBean implements Serializable {
      * @param y double (-5,5)
      * @param r int {1,1.5,2,2.5,3}
      */
+    @Getter
     private double x;
+    @Getter
     private double y;
+    @Getter
     private double r;
 
     /**
@@ -51,19 +55,24 @@ public class PointsBean implements Serializable {
      * @param hiddenY double
      * @param hiddenR {1,1.5,2,2.5,3} R has to be the value in the variant.
      */
+    @Getter
     private double hiddenX;
+    @Getter
     private double hiddenY;
+    @Getter
     private double hiddenR;
 
+    @Getter
     private List<Point> allPoints;
+    @Getter
     private List<Point> pointsFromDB;
-
+    @Getter
     private DataSource ds;
 
     {
         try {
             Context context = new InitialContext();
-            ds = (DataSource) context.lookup("java:jboss/datasources/oracle");
+            ds = (DataSource) context.lookup("java:jboss/datasources/postgresqlDS");
         } catch (NamingException e) {
             e.printStackTrace();
         }
@@ -75,14 +84,15 @@ public class PointsBean implements Serializable {
     }
 
     public void addPoint(double x, double y, double r) throws SQLException {
-        try {Point newPoint = new Point();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss dd.MM.yyyy");
-        newPoint.setQueryTime(dateFormat.format(new Date(System.currentTimeMillis())));
-        newPoint.setX(x);
-        newPoint.setY(y);
-        newPoint.setR(r);
-        newPoint.setInArea(InAreaChecker.getResult(x, y, r));
-        allPoints.add(newPoint);
+        try {
+            Point newPoint = new Point();
+            SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss dd.MM.yyyy");
+            newPoint.setQueryTime(dateFormat.format(new Date(System.currentTimeMillis())));
+            newPoint.setX(x);
+            newPoint.setY(y);
+            newPoint.setR(r);
+            newPoint.setInArea(InAreaChecker.getResult(x, y, r));
+            allPoints.add(newPoint);
 
             if (ds == null) {
                 throw new SQLException("No data source");
@@ -100,7 +110,7 @@ public class PointsBean implements Serializable {
                     newpoint.setDouble(2, newPoint.getY());
                     newpoint.setDouble(3, newPoint.getR());
                     newpoint.setBoolean(4, newPoint.isInArea());
-                    newpoint.setString(5,newPoint.getQueryTime());
+                    newpoint.setString(5, newPoint.getQueryTime());
                     newpoint.executeUpdate();
                     conn.commit();
                     committed = true;
@@ -118,6 +128,7 @@ public class PointsBean implements Serializable {
             throwable.printStackTrace();
         }
     }
+
     public List<Point> getPointsFromDB() throws SQLException {
         System.out.println("gettingAllPoints----------");
         pointsFromDB = new ArrayList<>();
@@ -132,13 +143,8 @@ public class PointsBean implements Serializable {
             try {
                 PreparedStatement newpoint = conn.prepareStatement("SELECT * FROM POINTS");
                 ResultSet result2 = newpoint.executeQuery();
-                while (result2.next()){
-                    pointsFromDB.add(new Point(
-                            result2.getDouble(1),
-                            result2.getDouble(2),
-                            result2.getDouble(3),
-                            result2.getBoolean(4),
-                            result2.getString(5)
+                while (result2.next()) {
+                    pointsFromDB.add(new Point(result2.getDouble(1), result2.getDouble(2), result2.getDouble(3), result2.getBoolean(4), result2.getString(5)
 
                     ));
                 }
@@ -151,7 +157,7 @@ public class PointsBean implements Serializable {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             conn.close();
         }
         return pointsFromDB;
@@ -179,7 +185,7 @@ public class PointsBean implements Serializable {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             conn.close();
         }
         allPoints.clear();
