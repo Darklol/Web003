@@ -1,14 +1,17 @@
 package ru.itmo.web.model;
 
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @Entity
-//@Table(name = "points")
+@Table(name = "points")
 public class Point {
     public Point(Double x, Double y, Double r, boolean inArea, String queryTime) {
         this.x = x;

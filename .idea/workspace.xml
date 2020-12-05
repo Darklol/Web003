@@ -5,8 +5,7 @@
   </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="web003:war exploded" />
-      <artifact name="web003:war exploded" />
+      <artifact name="Web003:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -37,25 +36,120 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="419b3825-d547-4ad7-aae2-716cc6fe3844" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/web003_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/pic/ROLEX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_faces_jsf_api_2_2_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_faces_jsf_impl_2_2_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_3_6_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_primefaces_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/DataBase/DataBaseStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/DataBase/PointsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/Web003_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Web003_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web003_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Web003_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web003.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Web003.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/clock.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/clock.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/testPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/testPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/testXHTML.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/testXHTML.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/web/beans/PointsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/beans/PointsBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/web/model/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/model/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/web/wildFlyFile/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/layout.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/layout.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/itmo/web/beans/PointsBeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/itmo/web/beans/PointsBeanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/beans.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="points: table" type="69fad909:PgImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="roles" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -64,24 +158,18 @@
         <option value="JUnit5 Test Class" />
         <option value="HTML File" />
         <option value="jsf" />
-        <option value="Class" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\plugins\maven\lib\maven3" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1keLN1FLjpYcEsJa4WQzXW3YFrP" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -110,14 +198,25 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="ru.itmo.web.beans" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\Web003\src\main\resources" />
+      <recent name="C:\Users\TheHs\Documents\GitHub\Web003\src\main\webapp\resources\META-INF" />
+      <recent name="C:\Users\TheHs\Documents\GitHub\Web003\src\main\webapp\resources\pic" />
+      <recent name="C:\Users\TheHs\Documents\GitHub\Web003\src\main\java\ru\itmo\web\wildFlyFile" />
+      <recent name="C:\Users\TheHs\Documents\GitHub\Web003\src\main\java\ru\itmo\web" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.itmo.web.database" />
+      <recent name="ru.itmo.web.InAreaChecker" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -129,36 +228,13 @@
       <recent name="C:\Users\TheHs\Documents\GitHub\Web003" />
       <recent name="C:\Users\TheHs\Documents\GitHub\Web003\src" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ru.itmo.web.database" />
-      <recent name="ru.itmo.web.InAreaChecker" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\TheHs\Documents\GitHub\Web003\src\main\webapp\resources\META-INF" />
-      <recent name="C:\Users\TheHs\Documents\GitHub\Web003\src\main\webapp\resources\pic" />
-      <recent name="C:\Users\TheHs\Documents\GitHub\Web003\src\main\java\ru\itmo\web\wildFlyFile" />
-      <recent name="C:\Users\TheHs\Documents\GitHub\Web003\src\main\java\ru\itmo\web" />
-      <recent name="C:\Users\TheHs\Documents\GitHub\Web003\src\main\webapp\resources\js" />
-    </key>
   </component>
   <component name="RunManager" selected="JBoss Server.JBoss 21.0.0.Final">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JBoss 21.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 21.0.0.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="JBoss 21.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 21.0.0.Final" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/web03-1.0-SNAPSHOT/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="web003:war exploded">
+        <artifact name="Web003:war exploded">
           <settings />
         </artifact>
       </deployment>
@@ -222,8 +298,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="web003:war exploded" />
-          <artifact name="web003:war exploded" />
+          <artifact name="Web003:war exploded" />
         </option>
       </method>
     </configuration>
@@ -309,7 +384,41 @@
       <item itemvalue="JBoss Server.JBoss 21.0.0.Final" />
     </list>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="JBoss Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="JBoss Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="postgres@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="postgres@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@50ea6853" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="419b3825-d547-4ad7-aae2-716cc6fe3844" name="Default Changelist" comment="" />
@@ -328,6 +437,12 @@
       <workItem from="1606830328662" duration="408000" />
       <workItem from="1606831201294" duration="3606000" />
       <workItem from="1606836023359" duration="5104000" />
+      <workItem from="1607095647948" duration="7454000" />
+      <workItem from="1607108114722" duration="66000" />
+      <workItem from="1607108208113" duration="893000" />
+      <workItem from="1607109144195" duration="2245000" />
+      <workItem from="1607153796634" duration="1629000" />
+      <workItem from="1607183966204" duration="5098000" />
     </task>
     <task id="LOCAL-00001" summary="Have made some directories">
       <created>1605780467798</created>
@@ -431,19 +546,20 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Have made some directories" />
@@ -467,9 +583,14 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1958" y="449" key="#Assign_Data_Sources/0.0.2752.1112@0.0.2752.1112" timestamp="1606540225594" />
-    <state x="1422" y="104" key="#Project_Structure" timestamp="1606234384218">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state x="499" y="10" key="#JBoss_21.0.0.Final" timestamp="1607084142475">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="499" y="10" key="#JBoss_21.0.0.Final/0.0.1536.824@0.0.1536.824" timestamp="1607084142475" />
+    <state x="722" y="77" key="#Project_Structure" timestamp="1607084161243">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="722" y="77" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1607084161243" />
     <state x="1422" y="104" key="#Project_Structure/0.0.2752.1112@0.0.2752.1112" timestamp="1606234384218" />
     <state x="927" y="147" key="#SSH_Configurations" timestamp="1606798556769">
       <screen x="0" y="0" width="2752" height="1112" />
@@ -479,10 +600,15 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1983" y="301" key="#Schemas_and_DTDs/0.0.2752.1112@0.0.2752.1112" timestamp="1606220410435" />
-    <state x="1271" y="0" width="1088" height="1112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606836993584">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state x="709" y="0" width="736" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607108966722">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="709" y="0" width="736" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1607108966722" />
     <state x="1271" y="0" width="1088" height="1112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1606836993584" />
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1607110047486">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1607110047486" />
     <state x="1817" y="57" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1606220411217">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
@@ -495,58 +621,59 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1482" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1606735048020" />
-    <state x="1451" y="98" key="CommitChangelistDialog2" timestamp="1606819643055">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state x="602" y="13" key="CommitChangelistDialog2" timestamp="1607190174947">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="602" y="13" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1607190174947" />
     <state x="1451" y="98" key="CommitChangelistDialog2/0.0.2752.1112@0.0.2752.1112" timestamp="1606819643055" />
     <state x="537" y="60" width="2201" height="917" key="DiffContextDialog" timestamp="1606463070512">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="537" y="60" width="2201" height="917" key="DiffContextDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1606463070512" />
-    <state x="1878" y="311" key="FileChooserDialogImpl" timestamp="1606838343771">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state x="1048" y="230" key="FileChooserDialogImpl" timestamp="1607084214771">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="1048" y="230" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606705343457" />
+    <state x="1048" y="230" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607084214771" />
     <state x="1878" y="311" key="FileChooserDialogImpl/0.0.2752.1112@0.0.2752.1112" timestamp="1606838343771" />
-    <state width="766" height="265" key="GridCell.Tab.0.bottom" timestamp="1606840630088">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state width="1024" height="224" key="GridCell.Tab.0.bottom" timestamp="1607190174999">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1329" height="376" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606620060202" />
+    <state width="1024" height="224" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607190174999" />
     <state width="766" height="265" key="GridCell.Tab.0.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1606840630088" />
-    <state width="766" height="265" key="GridCell.Tab.0.center" timestamp="1606840630088">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state width="1024" height="224" key="GridCell.Tab.0.center" timestamp="1607190174998">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1329" height="376" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606620060202" />
+    <state width="1024" height="224" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607190174998" />
     <state width="766" height="265" key="GridCell.Tab.0.center/0.0.2752.1112@0.0.2752.1112" timestamp="1606840630088" />
-    <state width="766" height="265" key="GridCell.Tab.0.left" timestamp="1606840630087">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state width="1024" height="224" key="GridCell.Tab.0.left" timestamp="1607190174998">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1329" height="376" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606620060202" />
+    <state width="1024" height="224" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607190174998" />
     <state width="766" height="265" key="GridCell.Tab.0.left/0.0.2752.1112@0.0.2752.1112" timestamp="1606840630087" />
-    <state width="766" height="265" key="GridCell.Tab.0.right" timestamp="1606840630088">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state width="1024" height="224" key="GridCell.Tab.0.right" timestamp="1607190174998">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1329" height="376" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606620060202" />
+    <state width="1024" height="224" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607190174998" />
     <state width="766" height="265" key="GridCell.Tab.0.right/0.0.2752.1112@0.0.2752.1112" timestamp="1606840630088" />
-    <state width="969" height="265" key="GridCell.Tab.1.bottom" timestamp="1606835867573">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state width="1024" height="371" key="GridCell.Tab.1.bottom" timestamp="1607086240368">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1329" height="376" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606620060202" />
+    <state width="1024" height="371" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607086240368" />
     <state width="969" height="265" key="GridCell.Tab.1.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1606835867573" />
-    <state width="969" height="265" key="GridCell.Tab.1.center" timestamp="1606835867573">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state width="1024" height="371" key="GridCell.Tab.1.center" timestamp="1607086240368">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1329" height="376" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606620060202" />
+    <state width="1024" height="371" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1607086240368" />
     <state width="969" height="265" key="GridCell.Tab.1.center/0.0.2752.1112@0.0.2752.1112" timestamp="1606835867573" />
-    <state width="969" height="265" key="GridCell.Tab.1.left" timestamp="1606835867573">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state width="1024" height="371" key="GridCell.Tab.1.left" timestamp="1607086240368">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1329" height="376" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606620060202" />
+    <state width="1024" height="371" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1607086240368" />
     <state width="969" height="265" key="GridCell.Tab.1.left/0.0.2752.1112@0.0.2752.1112" timestamp="1606835867573" />
-    <state width="969" height="265" key="GridCell.Tab.1.right" timestamp="1606835867573">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state width="1024" height="371" key="GridCell.Tab.1.right" timestamp="1607086240368">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1329" height="376" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606620060202" />
+    <state width="1024" height="371" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607086240368" />
     <state width="969" height="265" key="GridCell.Tab.1.right/0.0.2752.1112@0.0.2752.1112" timestamp="1606835867573" />
     <state width="1414" height="312" key="GridCell.Tab.2.bottom" timestamp="1606815083920">
       <screen x="0" y="0" width="2752" height="1112" />
@@ -593,9 +720,10 @@
     </state>
     <state x="333" y="158" width="729" height="436" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1606705389550" />
     <state x="1704" y="263" width="747" height="592" key="NewModule_or_Project.wizard/0.0.2752.1112@0.0.2752.1112" timestamp="1606283098055" />
-    <state x="1347" y="120" width="996" height="795" key="SettingsEditor" timestamp="1606838665471">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state x="622" y="89" width="914" height="707" key="SettingsEditor" timestamp="1607107834566">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="622" y="89" width="914" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607107834566" />
     <state x="1347" y="120" width="996" height="795" key="SettingsEditor/0.0.2752.1112@0.0.2752.1112" timestamp="1606838665471" />
     <state x="1583" y="255" key="Vcs.Push.Dialog.v2" timestamp="1606819651285">
       <screen x="0" y="0" width="2752" height="1112" />
@@ -605,6 +733,18 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1919" y="378" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.2752.1112@0.0.2752.1112" timestamp="1606755755926" />
+    <state x="638" y="262" width="322" height="300" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1607188751601">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="638" y="262" width="322" height="300" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1607188751601" />
+    <state x="851" y="106" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1607186964112">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="851" y="106" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1607186964112" />
+    <state x="628" y="158" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1607186426192">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="628" y="158" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1536.824@0.0.1536.824" timestamp="1607186426192" />
     <state x="1471" y="100" width="1187" height="918" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1606840788636">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
@@ -613,6 +753,10 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1345" y="266" width="1272" height="760" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1606839931090" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1607183977209">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1607183977209" />
     <state x="1582" y="437" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1606535991435">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
@@ -653,19 +797,6 @@
           <url>file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js</url>
           <line>28</line>
           <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/web/InAreaChecker/InAreaChecker.java</url>
-          <line>6</line>
-          <properties class="ru.itmo.web.InAreaChecker.InAreaChecker" method="getResult">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/itmo/web/beans/PointsBean.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

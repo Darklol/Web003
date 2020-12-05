@@ -5,10 +5,12 @@ import javax.faces.bean.ManagedBean;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
+import ru.itmo.web.DataBase.DataBaseStorage;
 import ru.itmo.web.InAreaChecker.InAreaChecker;
 import ru.itmo.web.model.Point;
 
 import javax.faces.bean.ApplicationScoped;
+import javax.faces.bean.ManagedProperty;
 import javax.faces.component.UIComponent;
 import javax.faces.event.ActionEvent;
 import javax.naming.Context;
@@ -26,9 +28,9 @@ import java.util.*;
 /**
  * @author HUANG SIYUAN
  */
-@Setter
 @ManagedBean(name = "pointsBean")
 @ApplicationScoped
+@Setter
 public class PointsBean implements Serializable {
 
     //Here x,y,r is for creating points from form
@@ -69,127 +71,51 @@ public class PointsBean implements Serializable {
     @Getter
     private DataSource ds;
 
-    {
-        try {
-            Context context = new InitialContext();
-            ds = (DataSource) context.lookup("java:jboss/datasources/postgresqlDS");
-        } catch (NamingException e) {
-            e.printStackTrace();
-        }
-    }
+    @ManagedProperty("#{dao}")
+    private DataBaseStorage dbStorage;
 
     public void init() {
-        allPoints = new ArrayList<Point>();
-
+/*        FacesContext facesContext = FacesContext.getCurrentInstance();
+        dbStorage = facesContext.getApplication()
+                .evaluateExpressionGet(facesContext, "#{dao}", DBStorage.class);*/
+        allPoints = dbStorage.getAllPoints();
     }
 
-    public void addPoint(double x, double y, double r) throws SQLException {
-        try {
-            Point newPoint = new Point();
-            SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss dd.MM.yyyy");
-            newPoint.setQueryTime(dateFormat.format(new Date(System.currentTimeMillis())));
-            newPoint.setX(x);
-            newPoint.setY(y);
-            newPoint.setR(r);
-            newPoint.setInArea(InAreaChecker.getResult(x, y, r));
-            allPoints.add(newPoint);
-
-            if (ds == null) {
-                throw new SQLException("No data source");
-            }
-            Connection conn = ds.getConnection();
-            if (conn == null) {
-                throw new SQLException("No connection");
-            }
-            try {
-                conn.setAutoCommit(false);
-                boolean committed = false;
-                try {
-                    PreparedStatement newpoint = conn.prepareStatement("INSERT INTO POINTS VALUES (?,?,?,?,?)");
-                    newpoint.setDouble(1, newPoint.getX());
-                    newpoint.setDouble(2, newPoint.getY());
-                    newpoint.setDouble(3, newPoint.getR());
-                    newpoint.setBoolean(4, newPoint.isInArea());
-                    newpoint.setString(5, newPoint.getQueryTime());
-                    newpoint.executeUpdate();
-                    conn.commit();
-                    committed = true;
-                } finally {
-                    if (!committed) {
-                        conn.rollback();
-                    }
-                }
-            } finally {
-                conn.close();
-
-                //We will do database later)
-            }
-        } catch (Throwable throwable) {
-            throwable.printStackTrace();
-        }
-    }
-
-    public List<Point> getPointsFromDB() throws SQLException {
-        System.out.println("gettingAllPoints----------");
-        pointsFromDB = new ArrayList<>();
-        Connection conn = ds.getConnection();
-        if (conn == null) {
-            throw new SQLException("No connection");
-        }
-
-        try {
-            conn.setAutoCommit(false);
-            boolean committed = false;
-            try {
-                PreparedStatement newpoint = conn.prepareStatement("SELECT * FROM POINTS");
-                ResultSet result2 = newpoint.executeQuery();
-                while (result2.next()) {
-                    pointsFromDB.add(new Point(result2.getDouble(1), result2.getDouble(2), result2.getDouble(3), result2.getBoolean(4), result2.getString(5)
-
-                    ));
-                }
-                conn.commit();
-                committed = true;
-            } finally {
-                if (!committed) {
-                    conn.rollback();
-                }
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            conn.close();
-        }
-        return pointsFromDB;
-    }
-
-    public void clearTable() throws SQLException {
-
-        Connection conn = ds.getConnection();
-        if (conn == null) {
-            throw new SQLException("No connection");
-        }
-
-        try {
-            conn.setAutoCommit(false);
-            boolean committed = false;
-            try {
-                PreparedStatement newpoint = conn.prepareStatement("TRUNCATE TABLE POINTS");
-                newpoint.executeUpdate();
-                conn.commit();
-                committed = true;
-            } finally {
-                if (!committed) {
-                    conn.rollback();
-                }
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            conn.close();
+    public void clearTable() {
+        for (Point p : dbStorage.getAllPoints()) {
+            dbStorage.removePoint(p);
         }
         allPoints.clear();
     }
+
+    @Getter
+    private double xx, yy, rr;
+
+    public String addPointSuper() {
+        addPoint(xx, yy, rr);
+        return "main";
+    }
+
+    public void addPoint(double x, double y, double r) {
+        Point currentPoint = new Point();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss dd.MM.yyyy");
+        currentPoint.setQueryTime(dateFormat
+                .format(new Date(System.currentTimeMillis())));
+        currentPoint.setX(x);
+        currentPoint.setR(r);
+        currentPoint.setY(y);
+        currentPoint.setInArea(InAreaChecker.getResult(x, y, r));
+        allPoints.add(currentPoint);
+        dbStorage.addPoint(currentPoint);
+    }
+
+//    public String addPointsFromField() {
+//        if (validateR(r) && validateXAndY()) {
+//            addPoint(x, y, r);
+//        }
+//        return "main";
+//    }
+
 
     //I don't understand why here return 'main'
 
