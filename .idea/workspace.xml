@@ -36,41 +36,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="419b3825-d547-4ad7-aae2-716cc6fe3844" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_faces_jsf_api_2_2_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_faces_jsf_impl_2_2_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_3_6_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_primefaces_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/DataBase/DataBaseStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/DataBase/PointsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Web003_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Web003_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web003_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Web003_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web003.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Web003.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/web/beans/PointsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/beans/PointsBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/web/model/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/model/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/web/wildFlyFile/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/layout.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/layout.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/itmo/web/beans/PointsBeanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/itmo/web/beans/PointsBeanTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/beans.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +133,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1keLN1FLjpYcEsJa4WQzXW3YFrP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -231,7 +198,6 @@
   </component>
   <component name="RunManager" selected="JBoss Server.JBoss 21.0.0.Final">
     <configuration name="JBoss 21.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 21.0.0.Final" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/web03-1.0-SNAPSHOT/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Web003:war exploded">
@@ -442,7 +408,7 @@
       <workItem from="1607108208113" duration="893000" />
       <workItem from="1607109144195" duration="2245000" />
       <workItem from="1607153796634" duration="1629000" />
-      <workItem from="1607183966204" duration="5098000" />
+      <workItem from="1607183966204" duration="6041000" />
     </task>
     <task id="LOCAL-00001" summary="Have made some directories">
       <created>1605780467798</created>
@@ -542,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606819644926</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Hibernate is working (on local DB)&#10;But main.xhtml is a mess">
+      <created>1607190194648</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1607190194648</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -576,7 +549,8 @@
     <MESSAGE value="Finished the validators and fix all of the bugs. Need css, clock and database)" />
     <MESSAGE value="Some changes in database part" />
     <MESSAGE value="Some changes in database part again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some changes in database part again" />
+    <MESSAGE value="Hibernate is working (on local DB)&#10;But main.xhtml is a mess" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hibernate is working (on local DB)&#10;But main.xhtml is a mess" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1958" y="449" key="#Assign_Data_Sources" timestamp="1606540225594">
@@ -600,10 +574,10 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1983" y="301" key="#Schemas_and_DTDs/0.0.2752.1112@0.0.2752.1112" timestamp="1606220410435" />
-    <state x="709" y="0" width="736" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607108966722">
+    <state x="709" y="0" width="736" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607190945738">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="709" y="0" width="736" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1607108966722" />
+    <state x="709" y="0" width="736" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1607190945738" />
     <state x="1271" y="0" width="1088" height="1112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1606836993584" />
     <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1607110047486">
       <screen x="0" y="0" width="1536" height="824" />
@@ -621,10 +595,10 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1482" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1606735048020" />
-    <state x="602" y="13" key="CommitChangelistDialog2" timestamp="1607190174947">
+    <state x="602" y="0" key="CommitChangelistDialog2" timestamp="1607190192075">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="602" y="13" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1607190174947" />
+    <state x="602" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1607190192075" />
     <state x="1451" y="98" key="CommitChangelistDialog2/0.0.2752.1112@0.0.2752.1112" timestamp="1606819643055" />
     <state x="537" y="60" width="2201" height="917" key="DiffContextDialog" timestamp="1606463070512">
       <screen x="0" y="0" width="2752" height="1112" />
@@ -635,25 +609,25 @@
     </state>
     <state x="1048" y="230" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607084214771" />
     <state x="1878" y="311" key="FileChooserDialogImpl/0.0.2752.1112@0.0.2752.1112" timestamp="1606838343771" />
-    <state width="1024" height="224" key="GridCell.Tab.0.bottom" timestamp="1607190174999">
+    <state width="1024" height="223" key="GridCell.Tab.0.bottom" timestamp="1607190954800">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="224" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607190174999" />
+    <state width="1024" height="223" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607190954800" />
     <state width="766" height="265" key="GridCell.Tab.0.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1606840630088" />
-    <state width="1024" height="224" key="GridCell.Tab.0.center" timestamp="1607190174998">
+    <state width="1024" height="223" key="GridCell.Tab.0.center" timestamp="1607190954799">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="224" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607190174998" />
+    <state width="1024" height="223" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607190954799" />
     <state width="766" height="265" key="GridCell.Tab.0.center/0.0.2752.1112@0.0.2752.1112" timestamp="1606840630088" />
-    <state width="1024" height="224" key="GridCell.Tab.0.left" timestamp="1607190174998">
+    <state width="1024" height="223" key="GridCell.Tab.0.left" timestamp="1607190954799">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="224" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607190174998" />
+    <state width="1024" height="223" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607190954799" />
     <state width="766" height="265" key="GridCell.Tab.0.left/0.0.2752.1112@0.0.2752.1112" timestamp="1606840630087" />
-    <state width="1024" height="224" key="GridCell.Tab.0.right" timestamp="1607190174998">
+    <state width="1024" height="223" key="GridCell.Tab.0.right" timestamp="1607190954800">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="224" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607190174998" />
+    <state width="1024" height="223" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607190954800" />
     <state width="766" height="265" key="GridCell.Tab.0.right/0.0.2752.1112@0.0.2752.1112" timestamp="1606840630088" />
     <state width="1024" height="371" key="GridCell.Tab.1.bottom" timestamp="1607086240368">
       <screen x="0" y="0" width="1536" height="824" />
@@ -715,19 +689,24 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1603" y="262" key="IDE.errors.dialog/0.0.2752.1112@0.0.2752.1112" timestamp="1606755377450" />
+    <state x="481" y="128" key="MultipleFileMergeDialog" timestamp="1607190268607">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="481" y="128" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1607190268607" />
     <state x="333" y="158" width="729" height="436" key="NewModule_or_Project.wizard" timestamp="1606705389550">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="333" y="158" width="729" height="436" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1606705389550" />
     <state x="1704" y="263" width="747" height="592" key="NewModule_or_Project.wizard/0.0.2752.1112@0.0.2752.1112" timestamp="1606283098055" />
-    <state x="622" y="89" width="914" height="707" key="SettingsEditor" timestamp="1607107834566">
+    <state x="622" y="89" width="914" height="707" key="SettingsEditor" timestamp="1607190709874">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="622" y="89" width="914" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607107834566" />
+    <state x="622" y="89" width="914" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607190709874" />
     <state x="1347" y="120" width="996" height="795" key="SettingsEditor/0.0.2752.1112@0.0.2752.1112" timestamp="1606838665471" />
-    <state x="1583" y="255" key="Vcs.Push.Dialog.v2" timestamp="1606819651285">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state x="722" y="189" key="Vcs.Push.Dialog.v2" timestamp="1607190219893">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="722" y="189" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607190219893" />
     <state x="1583" y="255" key="Vcs.Push.Dialog.v2/0.0.2752.1112@0.0.2752.1112" timestamp="1606819651285" />
     <state x="1919" y="378" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1606755755926">
       <screen x="0" y="0" width="2752" height="1112" />
