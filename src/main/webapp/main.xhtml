@@ -117,7 +117,7 @@
                                          value="Clear table"
                                          type="button"
                                          action="#{pointsBean.clearTable}">
-                            <f:ajax render="results-table"/>
+                            <f:ajax render=":results-table"/>
                         </h:commandButton>
                     </div>
                 </div>
@@ -138,7 +138,7 @@
 
             <div class="text-center my-3">
                 <div class="h4">Results</div>
-                <h:dataTable styleClass="table table-bordered" value="#{pointsBean.pointsFromDB}" var="point"
+                <h:dataTable styleClass="table table-bordered" value="#{pointsBean.allPoints}" var="point"
                              id="results-table">
 
                     <h:column>

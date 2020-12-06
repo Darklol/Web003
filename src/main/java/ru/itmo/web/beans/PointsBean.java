@@ -67,8 +67,6 @@ public class PointsBean implements Serializable {
     @Getter
     private List<Point> allPoints;
     @Getter
-    private List<Point> pointsFromDB;
-    @Getter
     private DataSource ds;
 
     @ManagedProperty("#{dao}")
@@ -86,14 +84,6 @@ public class PointsBean implements Serializable {
             dbStorage.removePoint(p);
         }
         allPoints.clear();
-    }
-
-    @Getter
-    private double xx, yy, rr;
-
-    public String addPointSuper() {
-        addPoint(xx, yy, rr);
-        return "main";
     }
 
     public void addPoint(double x, double y, double r) {
