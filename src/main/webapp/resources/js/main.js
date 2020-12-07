@@ -94,3 +94,5 @@ $(".r-radio").click(function (){
 });
 
 $(".graphics svg").click(clickPlotHandler);
+
+function clearTheGraphics() {$(".point").remove();}

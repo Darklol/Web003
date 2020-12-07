@@ -99,16 +99,6 @@ public class PointsBean implements Serializable {
         dbStorage.addPoint(currentPoint);
     }
 
-//    public String addPointsFromField() {
-//        if (validateR(r) && validateXAndY()) {
-//            addPoint(x, y, r);
-//        }
-//        return "main";
-//    }
-
-
-    //I don't understand why here return 'main'
-
     public String addPointFromHiddenForm() throws SQLException {
         if (validateR(hiddenR)) {
             addPoint(hiddenX, hiddenY, hiddenR);

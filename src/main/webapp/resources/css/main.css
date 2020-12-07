@@ -1,3 +1,58 @@
 .active {
     background-color: #dc1414;
 }
+.left-header{
+    float: left;
+    width: 33.33%;
+    text-align: left;
+    margin-left: 2%;
+    margin-top: 10px;
+}
+
+.center-header {
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    width: 33.33%;
+}
+
+.right-header {
+    width: 33.33%;
+    float: right;
+    text-align: right;
+    margin-right: 3%;
+    margin-top: -40px;
+    vertical-align: center;
+}
+
+.current-time{
+    width: 300px;
+    margin: 10% auto 1%;
+}
+
+.daySymbol{
+    color: #c0c0c0;
+}
+
+.link-button{
+    text-align:center;
+}
+
+@keyframes hue {
+    from {
+        filter: hue-rotate(0);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.rainbow-text {
+    display: inline-block;
+    position: relative;
+    color: transparent;
+    animation: hue 2s linear infinite;
+    background-image: linear-gradient(to right bottom, rgb(255,0,0), rgb(255,128,0), rgb(255,255,0), rgb(0,255,0), rgb(0,255,128), rgb(0,255,255), rgb(0,128,255), rgb(0,0,255), rgb(128,0,255), rgb(255,0,255), rgb(255,0,128));
+    -webkit-background-clip: text;
+}

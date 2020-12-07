@@ -27,45 +27,46 @@
 
         <ui:define name="content">
             <f:event type="preRenderView" listener="#{pointsBean.init}"/> <!--What' this-->
-            <h:form id="value-form">
+            <h:form id="value-form" styleClass="flex-column justify-content-center">
 
-                <div class="x-value">   <!-- We can change "x-text" to change words' style -->
+                <div class="x-value container my-auto">   <!-- We can change "x-text" to change words' style -->
+                    <div><p></p></div>
                     <div class="h5">X value:</div>
-
-                    <p:commandLink id="x-3" value="-3" styleClass="xbtn"
+                    <div class="btn-group-sm">
+                    <p:commandLink id="x-3" value="-3" styleClass="xbtn btn btn-secondary"
                                    actionListener="#{pointsBean.toggle}"></p:commandLink>
 
-                    <p:commandLink id="x-2" value="-2" styleClass="xbtn"
+                    <p:commandLink id="x-2" value="-2" styleClass="xbtn btn btn-secondary"
                                    actionListener="#{pointsBean.toggle}"></p:commandLink>
 
-                    <p:commandLink id="x-1" value="-1" styleClass="xbtn"
+                    <p:commandLink id="x-1" value="-1" styleClass="xbtn btn btn-secondary"
                                    actionListener="#{pointsBean.toggle}"></p:commandLink>
 
-                    <p:commandLink id="x0" value="0" styleClass="xbtn"
+                    <p:commandLink id="x0" value="0" styleClass="xbtn btn btn-secondary"
                                    actionListener="#{pointsBean.toggle}"></p:commandLink>
 
-                    <p:commandLink id="x1" value="1" styleClass="xbtn"
+                    <p:commandLink id="x1" value="1" styleClass="xbtn btn btn-secondary"
                                    actionListener="#{pointsBean.toggle}"></p:commandLink>
 
-                    <p:commandLink id="x2" value="2" styleClass="xbtn"
+                    <p:commandLink id="x2" value="2" styleClass="xbtn btn btn-secondary"
                                    actionListener="#{pointsBean.toggle}"></p:commandLink>
 
-                    <p:commandLink id="x3" value="3" styleClass="xbtn"
+                    <p:commandLink id="x3" value="3" styleClass="xbtn btn btn-secondary"
                                    actionListener="#{pointsBean.toggle}"></p:commandLink>
 
-                    <p:commandLink id="x4" value="4" styleClass="xbtn"
+                    <p:commandLink id="x4" value="4" styleClass="xbtn btn btn-secondary"
                                    actionListener="#{pointsBean.toggle}"></p:commandLink>
 
-                    <p:commandLink id="x5" value="5" styleClass="xbtn"
+                    <p:commandLink id="x5" value="5" styleClass="xbtn btn btn-secondary"
                                    actionListener="#{pointsBean.toggle}"></p:commandLink>
-
+                    </div>
 
                     <div class="invalid-x d-none h5" style="color: red">
                         Please choose x.
                     </div>
                 </div>
 
-                <div class="y-value">
+                <div class="y-value container my-auto">
                     <div class="h5">Y value:</div>
                     <h:inputText id="y" name="y-text" a:placeholder="Value in [-5..5]"
                                  converterMessage="Y must be number..."
@@ -81,23 +82,23 @@
                 </div>
 
                 <!--We don't need to set "selected" attribute. Rendered output will set it on the first option-->
-                <div class="r-value">
+                <div class="r-value container my-auto">
                     <div class="h5">R value:</div>
-                    <h:selectOneRadio value="#{pointsBean.r}" styleClass="radio r-radio">
-                        <f:selectItem itemValue="1" itemLabel="1" styleClass="r-text"/>
-                        <f:selectItem itemValue="1.5" itemLabel="1.5" styleClass="r-text"/>
-                        <f:selectItem itemValue="2" itemLabel="2" styleClass="r-text"/>
-                        <f:selectItem itemValue="2.5" itemLabel="2.5" styleClass="r-text"/>
-                        <f:selectItem itemValue="3" itemLabel="3" styleClass="r-text"/>
+                    <h:selectOneRadio value="#{pointsBean.r}" styleClass="btn-group">
+                        <f:selectItem itemValue="1" itemLabel="1"/>
+                        <f:selectItem itemValue="1.5" itemLabel="1.5"/>
+                        <f:selectItem itemValue="2" itemLabel="2"/>
+                        <f:selectItem itemValue="2.5" itemLabel="2.5"/>
+                        <f:selectItem itemValue="3" itemLabel="3"/>
                     </h:selectOneRadio>
                     <div class="invalid-r d-none h5" style="color: red">
                         Please choose r.
                     </div>
                 </div>
 
-                <div class="control-buttons mt-3 row">
+                <div class="control-buttons align-content-center row">
 
-                    <div class="my-3 col-sm">
+                    <div class="col-sm">
                         <h:commandButton styleClass="btn btn-primary btn-lg submit-btn" value="Submit"
                                          type="submit"
                                          action="#{pointsBean.addPointFromFields}"
@@ -105,18 +106,19 @@
                         </h:commandButton>
                     </div>
 
-                    <div class="my-3 col-sm">
+                    <div class="col-sm">
                         <h:commandButton styleClass="btn btn-primary btn-lg clear-form-btn"
                                          value="Clear form"
                                          onclick="clearForm()"
                                          type="button"/>
                     </div>
 
-                    <div class="my-3 col-sm">
+                    <div class="col-sm" id="clear">
                         <h:commandButton styleClass="btn btn-primary btn-lg clear-table-btn"
                                          value="Clear table"
                                          type="button"
-                                         action="#{pointsBean.clearTable}">
+                                         action="#{pointsBean.clearTable}"
+                                         onclick="clearTheGraphics()">
                             <f:ajax render=":results-table"/>
                         </h:commandButton>
                     </div>
@@ -136,9 +138,18 @@
                 <ui:include src="templates/graphics.html"></ui:include>
             </div>
 
-            <div class="text-center my-3">
+            <div class="text-center my-3" >
+
+                <div class="link-button">
+                <h:link outcome="index" styleClass="btn-primary btn-lg">Start page</h:link>
+                </div>
+
+                <div>
+                    <p></p>
+                </div>
+
                 <div class="h4">Results</div>
-                <h:dataTable styleClass="table table-bordered" value="#{pointsBean.allPoints}" var="point"
+                <h:dataTable styleClass="table table-striped bg-secondary" value="#{pointsBean.allPoints}" var="point"
                              id="results-table">
 
                     <h:column>
@@ -168,9 +179,6 @@
                 </h:dataTable>
             </div>
 
-            <div class="link-button">
-                <h:link outcome="index">Start page</h:link>
-            </div>
         </ui:define>
 
         <ui:define name="scripts">
