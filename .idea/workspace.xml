@@ -35,8 +35,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="419b3825-d547-4ad7-aae2-716cc6fe3844" name="Default Changelist" comment="">
+    <list default="true" id="419b3825-d547-4ad7-aae2-716cc6fe3844" name="Default Changelist" comment="table is fixed again&#10;(I REALLY NEED TO LEARN HOW TO USE GITHUB)">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Web003_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/web/DataBase/DataBaseStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/DataBase/DataBaseStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itmo/web/beans/PointsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itmo/web/beans/PointsBean.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,13 +110,55 @@
         <item name="postgres: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="points: table" type="69fad909:PgImplModel$LocalTable" />
+        <item name="sequences" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="roles" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="studs@pg" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="studs@pg" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="studs@pg" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="studs: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="studs@pg" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="studs: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="studs@pg" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="studs: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="s284703: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="studs@pg" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="studs: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="s284703: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="studs@pg" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="studs: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="s284703: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="sequences" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -367,12 +413,12 @@
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="postgres@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="studs@pg: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="postgres@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@50ea6853" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="studs@pg: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@7c5b7b" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -409,6 +455,19 @@
       <workItem from="1607109144195" duration="2245000" />
       <workItem from="1607153796634" duration="1629000" />
       <workItem from="1607183966204" duration="6041000" />
+      <workItem from="1607253072666" duration="218000" />
+      <workItem from="1607253328819" duration="2045000" />
+      <workItem from="1607255476643" duration="166000" />
+      <workItem from="1607255671576" duration="23000" />
+      <workItem from="1607255717300" duration="1035000" />
+      <workItem from="1607259081224" duration="1879000" />
+      <workItem from="1607333693277" duration="388000" />
+      <workItem from="1607347590809" duration="169000" />
+      <workItem from="1607348816693" duration="10720000" />
+      <workItem from="1607366865136" duration="1910000" />
+      <workItem from="1607409526930" duration="596000" />
+      <workItem from="1607410444901" duration="152000" />
+      <workItem from="1607412619627" duration="9121000" />
     </task>
     <task id="LOCAL-00001" summary="Have made some directories">
       <created>1605780467798</created>
@@ -515,7 +574,28 @@
       <option name="project" value="LOCAL" />
       <updated>1607190194648</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="changes reverted to a stable version">
+      <created>1607252524529</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1607252524529</updated>
+    </task>
+    <task id="LOCAL-00017" summary="table is fixed again&#10;(I REALLY NEED TO LEARN HOW TO USE GITHUB)">
+      <created>1607254058486</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1607254058486</updated>
+    </task>
+    <task id="LOCAL-00018" summary="CSS is finally ready (still ugly)">
+      <created>1607360811375</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1607360811375</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,8 +607,34 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -550,7 +656,10 @@
     <MESSAGE value="Some changes in database part" />
     <MESSAGE value="Some changes in database part again" />
     <MESSAGE value="Hibernate is working (on local DB)&#10;But main.xhtml is a mess" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hibernate is working (on local DB)&#10;But main.xhtml is a mess" />
+    <MESSAGE value="changes reverted to a stable version" />
+    <MESSAGE value="table is fixed again&#10;(I REALLY NEED TO LEARN HOW TO USE GITHUB)" />
+    <MESSAGE value="CSS is finally ready (still ugly)" />
+    <option name="LAST_COMMIT_MESSAGE" value="CSS is finally ready (still ugly)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1958" y="449" key="#Assign_Data_Sources" timestamp="1606540225594">
@@ -561,10 +670,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="10" key="#JBoss_21.0.0.Final/0.0.1536.824@0.0.1536.824" timestamp="1607084142475" />
-    <state x="722" y="77" key="#Project_Structure" timestamp="1607084161243">
+    <state x="722" y="77" key="#Project_Structure" timestamp="1607367498124">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="722" y="77" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1607084161243" />
+    <state x="722" y="77" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1607367498124" />
     <state x="1422" y="104" key="#Project_Structure/0.0.2752.1112@0.0.2752.1112" timestamp="1606234384218" />
     <state x="927" y="147" key="#SSH_Configurations" timestamp="1606798556769">
       <screen x="0" y="0" width="2752" height="1112" />
@@ -574,10 +683,10 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1983" y="301" key="#Schemas_and_DTDs/0.0.2752.1112@0.0.2752.1112" timestamp="1606220410435" />
-    <state x="709" y="0" width="736" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607190945738">
+    <state x="709" y="0" width="736" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607368344394">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="709" y="0" width="736" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1607190945738" />
+    <state x="709" y="0" width="736" height="824" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1607368344394" />
     <state x="1271" y="0" width="1088" height="1112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1606836993584" />
     <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1607110047486">
       <screen x="0" y="0" width="1536" height="824" />
@@ -595,39 +704,39 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1482" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1606735048020" />
-    <state x="602" y="0" key="CommitChangelistDialog2" timestamp="1607190192075">
+    <state x="602" y="0" key="CommitChangelistDialog2" timestamp="1607360809180">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="602" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1607190192075" />
+    <state x="602" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1607360809180" />
     <state x="1451" y="98" key="CommitChangelistDialog2/0.0.2752.1112@0.0.2752.1112" timestamp="1606819643055" />
     <state x="537" y="60" width="2201" height="917" key="DiffContextDialog" timestamp="1606463070512">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="537" y="60" width="2201" height="917" key="DiffContextDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1606463070512" />
-    <state x="1048" y="230" key="FileChooserDialogImpl" timestamp="1607084214771">
+    <state x="1048" y="227" key="FileChooserDialogImpl" timestamp="1607410532741">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="1048" y="230" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607084214771" />
+    <state x="1048" y="227" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607410532741" />
     <state x="1878" y="311" key="FileChooserDialogImpl/0.0.2752.1112@0.0.2752.1112" timestamp="1606838343771" />
-    <state width="1024" height="223" key="GridCell.Tab.0.bottom" timestamp="1607190954800">
+    <state width="1024" height="187" key="GridCell.Tab.0.bottom" timestamp="1607428416677">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="223" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607190954800" />
+    <state width="1024" height="187" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607428416677" />
     <state width="766" height="265" key="GridCell.Tab.0.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1606840630088" />
-    <state width="1024" height="223" key="GridCell.Tab.0.center" timestamp="1607190954799">
+    <state width="1024" height="187" key="GridCell.Tab.0.center" timestamp="1607428416677">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="223" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607190954799" />
+    <state width="1024" height="187" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607428416677" />
     <state width="766" height="265" key="GridCell.Tab.0.center/0.0.2752.1112@0.0.2752.1112" timestamp="1606840630088" />
-    <state width="1024" height="223" key="GridCell.Tab.0.left" timestamp="1607190954799">
+    <state width="1024" height="187" key="GridCell.Tab.0.left" timestamp="1607428416677">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="223" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607190954799" />
+    <state width="1024" height="187" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607428416677" />
     <state width="766" height="265" key="GridCell.Tab.0.left/0.0.2752.1112@0.0.2752.1112" timestamp="1606840630087" />
-    <state width="1024" height="223" key="GridCell.Tab.0.right" timestamp="1607190954800">
+    <state width="1024" height="187" key="GridCell.Tab.0.right" timestamp="1607428416677">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="223" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607190954800" />
+    <state width="1024" height="187" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607428416677" />
     <state width="766" height="265" key="GridCell.Tab.0.right/0.0.2752.1112@0.0.2752.1112" timestamp="1606840630088" />
     <state width="1024" height="371" key="GridCell.Tab.1.bottom" timestamp="1607086240368">
       <screen x="0" y="0" width="1536" height="824" />
@@ -685,6 +794,10 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state width="1331" height="376" key="GridCell.Tab.3.right/0.0.2752.1112@0.0.2752.1112" timestamp="1606222841331" />
+    <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1607255694096">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1607255694096" />
     <state x="1603" y="262" key="IDE.errors.dialog" timestamp="1606755377450">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
@@ -693,20 +806,20 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="481" y="128" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1607190268607" />
-    <state x="333" y="158" width="729" height="436" key="NewModule_or_Project.wizard" timestamp="1606705389550">
+    <state x="333" y="158" width="729" height="436" key="NewModule_or_Project.wizard" timestamp="1607410596610">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="333" y="158" width="729" height="436" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1606705389550" />
+    <state x="333" y="158" width="729" height="436" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1607410596610" />
     <state x="1704" y="263" width="747" height="592" key="NewModule_or_Project.wizard/0.0.2752.1112@0.0.2752.1112" timestamp="1606283098055" />
-    <state x="622" y="89" width="914" height="707" key="SettingsEditor" timestamp="1607190709874">
+    <state x="622" y="89" width="914" height="707" key="SettingsEditor" timestamp="1607252340684">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="622" y="89" width="914" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607190709874" />
+    <state x="622" y="89" width="914" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607252340684" />
     <state x="1347" y="120" width="996" height="795" key="SettingsEditor/0.0.2752.1112@0.0.2752.1112" timestamp="1606838665471" />
-    <state x="722" y="189" key="Vcs.Push.Dialog.v2" timestamp="1607190219893">
+    <state x="722" y="189" key="Vcs.Push.Dialog.v2" timestamp="1607254064025">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="722" y="189" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607190219893" />
+    <state x="722" y="189" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607254064025" />
     <state x="1583" y="255" key="Vcs.Push.Dialog.v2/0.0.2752.1112@0.0.2752.1112" timestamp="1606819651285" />
     <state x="1919" y="378" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1606755755926">
       <screen x="0" y="0" width="2752" height="1112" />
@@ -716,10 +829,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="638" y="262" width="322" height="300" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1607188751601" />
-    <state x="851" y="106" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1607186964112">
+    <state x="422" y="107" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1607423984355">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="851" y="106" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1607186964112" />
+    <state x="422" y="107" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1607423984355" />
     <state x="628" y="158" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1607186426192">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

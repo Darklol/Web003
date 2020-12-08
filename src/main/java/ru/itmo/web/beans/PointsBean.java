@@ -69,7 +69,7 @@ public class PointsBean implements Serializable {
     @Getter
     private DataSource ds;
 
-    @ManagedProperty("#{dao}")
+    @ManagedProperty("#{dbs}")
     private DataBaseStorage dbStorage;
 
     public void init() {
